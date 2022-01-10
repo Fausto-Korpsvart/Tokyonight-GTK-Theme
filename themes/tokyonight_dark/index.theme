@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Tokyo Night Dark
+Comment=An Gtk+ theme based on Graphite from Vince with Tokyo Night Dark colour palette.
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Tokyo Night Dark
+MetacityTheme=Tokyo Night Dark
+IconTheme=Tokyo Night Dark Suru
+CursorTheme=Tokyo Night Dark
+ButtonLayout=close,minimize,maximize:menu

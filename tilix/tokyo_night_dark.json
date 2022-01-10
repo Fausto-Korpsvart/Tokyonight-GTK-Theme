@@ -1,0 +1,24 @@
+{
+    "name": "Tokyo Night Dark",
+    "comment": "Ported for Terminix Colour Scheme",
+    "use-theme-colors": false,
+    "foreground-color": "#c0caf5",
+    "background-color": "#1a1b26",
+    "palette": [
+      "#0f0f14",
+      "#f7768e",
+      "#9ece6a",
+      "#ff9e64",
+      "#7aa2f7",
+      "#bb9af7",
+      "#2ac3de",
+      "#9699a3",
+      "#414868",
+      "#f7768e",
+      "#9ece6a",
+      "#ff9e64",
+      "#2ac3de",
+      "#bb9af7",
+      "#73daca",
+      "#eff0f2"]
+}
