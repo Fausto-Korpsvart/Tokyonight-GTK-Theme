@@ -26,7 +26,7 @@ So, this is my first attempt with GTK themes, which currently only works on the 
 
 #### Installing themes in GNOME
 
-- 1 Download the theme from: [Tokyo Night GTK Theme](https://) and unzip the files.
+- 1 Download the theme from: [Tokyo Night GTK Theme](https://www.pling.com/p/1681315/) and unzip the files.
 - Cut the unzipped files and paste it into any of the following paths:
   - '~/.local/share' Create the folder 'themes' and paste the themes folders inside.
   - '~/.themes' in the 'home' directory, Create the folder '.themes' and paste the theme folders inside.
@@ -36,11 +36,11 @@ So, this is my first attempt with GTK themes, which currently only works on the 
 
 #### More themes of the 'Code Editors Colours for GTK Themes' serie
 
-- [**Tokyo Night Shell Themes**](https://) <br>
-- [**Tokyo Night Icon Themes**](https://) <br>
-- [**Gruvbox Themes**](https://) <br>
-- [**Gruvbox Shell Themes**](https://) <br>
-- [**Gruvbox Icons Themes**](https://) <br>
+- [**Tokyo Night Shell Themes**](https://www.pling.com/p/1681470/) <br>
+- [**Tokyo Night Icon Themes**](https://www.pling.com/p/1681475/) <br>
+- [**Gruvbox Themes**](https://www.pling.com/p/1681313/) <br>
+- [**Gruvbox Shell Themes**](https://www.pling.com/p/1681451/) <br>
+- [**Gruvbox Icons Themes**](https://www.pling.com/p/1681460/) <br>
 
 ---
 
