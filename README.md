@@ -38,9 +38,12 @@ So, this is my first attempt with GTK themes, which currently only works on the 
 
 - [**Tokyo Night Shell Themes**](https://www.pling.com/p/1681470/) <br>
 - [**Tokyo Night Icon Themes**](https://www.pling.com/p/1681475/) <br>
-- [**Gruvbox Themes**](https://www.pling.com/p/1681313/) <br>
+- [**Gruvbox GTK Themes**](https://www.pling.com/p/1681313/) <br>
 - [**Gruvbox Shell Themes**](https://www.pling.com/p/1681451/) <br>
 - [**Gruvbox Icons Themes**](https://www.pling.com/p/1681460/) <br>
+- [**Everforest GTK Themes**](https://www.pling.com/p/1695467/) <br>
+- [**Everforest Shell Themes**](https://www.pling.com/p/1695475/) <br>
+- [**Everforest Icons Themes**](https://www.pling.com/p/1695476/) <br>
 
 ---
 
