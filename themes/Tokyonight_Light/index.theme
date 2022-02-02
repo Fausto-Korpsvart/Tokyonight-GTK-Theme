@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Tokyonight_Light
+Comment=An Flat Gtk+ theme based on Elegant Design
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Tokyonight_Light
+MetacityTheme=Tokyonight_Light
+IconTheme=Tela-Tokyonight_Light_Suru
+CursorTheme=Tokyonight_Light
+ButtonLayout=close,minimize,maximize:menu
