@@ -14382,7 +14382,6 @@ popover.background toolbar {
   background-color: #343b58;
 }
 
-/* NOTE: ** Vince fixed issues */
 popover.background.combo viewport.frame > list {
   background-color: transparent;
 }
@@ -14633,19 +14632,19 @@ scrollbar {
 }
 
 scrollbar.top {
-  border-bottom: 1px solid rgba(239, 240, 242, 0.12);
+  border-bottom: transparent;
 }
 
 scrollbar.bottom {
-  border-top: 1px solid rgba(239, 240, 242, 0.12);
+  border-bottom: transparent;
 }
 
 scrollbar.left {
-  border-right: 1px solid rgba(239, 240, 242, 0.12);
+  border-bottom: transparent;
 }
 
 scrollbar.right {
-  border-left: 1px solid rgba(239, 240, 242, 0.12);
+  border-bottom: transparent;
 }
 
 scrollbar slider {
@@ -14705,13 +14704,13 @@ scrollbar.overlay-indicator:not(.dragging):not(.hovering) button {
   margin: 3px;
   border: 1px solid rgba(44, 44, 44, 0.3);
   border-radius: 9999px;
-  background-color: rgba(239, 240, 242, 0.5);
+  background-color: transparent;
   background-clip: padding-box;
   -gtk-icon-source: none;
 }
 
 scrollbar.overlay-indicator:not(.dragging):not(.hovering) button:disabled {
-  background-color: rgba(239, 240, 242, 0.3);
+  background-color: transparent;
 }
 
 scrollbar.overlay-indicator:not(.dragging):not(.hovering).horizontal slider {
@@ -14751,19 +14750,51 @@ scrollbar button {
 }
 
 scrollbar.vertical button.down {
-  -gtk-icon-source: -gtk-icontheme('pan-down-symbolic');
+  -gtk-icon-source: transparent;
+  background-color: transparent;
+  color: transparent;
+}
+
+scrollbar.vertical button.down:hover {
+  -gtk-icon-source: transparent;
+  background-color: transparent;
+  color: transparent;
 }
 
 scrollbar.vertical button.up {
-  -gtk-icon-source: -gtk-icontheme('pan-up-symbolic');
+  -gtk-icon-source: transparent;
+  background-color: transparent;
+  color: transparent;
+}
+
+scrollbar.vertical button.up:hover {
+  -gtk-icon-source: transparent;
+  background-color: transparent;
+  color: transparent;
 }
 
 scrollbar.horizontal button.down {
-  -gtk-icon-source: -gtk-icontheme('pan-end-symbolic');
+  -gtk-icon-source: transparent;
+  background-color: transparent;
+  color: transparent;
+}
+
+scrollbar.horizontal button.down:hover {
+  -gtk-icon-source: transparent;
+  background-color: transparent;
+  color: transparent;
 }
 
 scrollbar.horizontal button.up {
-  -gtk-icon-source: -gtk-icontheme('pan-start-symbolic');
+  -gtk-icon-source: transparent;
+  background-color: transparent;
+  color: transparent;
+}
+
+scrollbar.horizontal button.up:hover {
+  -gtk-icon-source: transparent;
+  background-color: transparent;
+  color: transparent;
 }
 
 /**********
@@ -16944,7 +16975,6 @@ colorchooser .popover.osd:backdrop {
 /**********************
  * Window Decorations *
  **********************/
-/* NOTE: 03 Border window decorations */
 decoration {
   transition: box-shadow 75ms cubic-bezier(0, 0, 0.2, 1);
   border-radius: 14px;
@@ -17015,7 +17045,6 @@ messagedialog.csd decoration {
   background-color: #24283b;
 }
 
-/* NOTE: 01 Window Control Buttons */
 button.titlebutton:not(.suggested-action):not(.destructive-action) {
   min-height: 14px;
   min-width: 14px;
@@ -17023,14 +17052,12 @@ button.titlebutton:not(.suggested-action):not(.destructive-action) {
   margin: 0 3px;
 }
 
-/* 01 - Inner icons in window control buttons */
 button.titlebutton:not(.suggested-action):not(.destructive-action).minimize,
 button.titlebutton:not(.suggested-action):not(.destructive-action).maximize,
 button.titlebutton:not(.suggested-action):not(.destructive-action).close {
   color: transparent;
 }
 
-/* 01 - Inner icons in window control buttons - Hover and active */
 button.titlebutton:not(.suggested-action):not(.destructive-action).minimize:hover,
 button.titlebutton:not(.suggested-action):not(.destructive-action).minimize:active {
   background-color: #8f5e15;
@@ -17047,7 +17074,6 @@ button.titlebutton:not(.suggested-action):not(.destructive-action).close:active 
   background-color: #8c4351;
 }
 
-/* 01 - Window control buttons - Color of buttons in backdrop window */
 button.titlebutton:not(.suggested-action):not(.destructive-action).minimize:backdrop,
 button.titlebutton:not(.suggested-action):not(.destructive-action).maximize:backdrop,
 button.titlebutton:not(.suggested-action):not(.destructive-action).close:backdrop {
@@ -17055,7 +17081,6 @@ button.titlebutton:not(.suggested-action):not(.destructive-action).close:backdro
   color: transparent;
 }
 
-/* 01 - Window control buttons - Hover color in active window */
 button.titlebutton:not(.suggested-action):not(.destructive-action).minimize:backdrop:hover,
 button.titlebutton:not(.suggested-action):not(.destructive-action).minimize:backdrop:active {
   background-color: #e0af68;
@@ -17072,7 +17097,6 @@ button.titlebutton:not(.suggested-action):not(.destructive-action).close:backdro
   color: transparent;
 }
 
-/* 01 - Window control buttons - Buttons color in active and normal modes */
 button.titlebutton:not(.suggested-action):not(.destructive-action).minimize {
   background-color: #e0af68;
 }
@@ -19957,7 +19981,6 @@ window#gnome-system-monitor.background.csd
 /************
  * Terminal *
  ************/
-/* HACK: TERMINAL, Gnome Terminal bottom rouded corners */
 terminal-window decoration {
   border-radius: 12px;
   padding: 0 2px 3px 2px;
@@ -20678,7 +20701,6 @@ window.background.csd.unified headerbar.selection-mode {
   box-shadow: none;
 }
 
-/* NOTE: 02 Nautilus border window decoratio (Lines added taken from css-dark file) */
 window.background.csd.unified,
 window.background.csd.unified > decoration,
 window.background.csd.unified > decoration-overlay {
@@ -20771,7 +20793,6 @@ button.flat.tilix-small-button {
   min-width: 16px;
 }
 
-/* HACK: TILIX Button rounded corners */
 window > notebook > stack {
   margin: 3px;
 }
@@ -21147,7 +21168,6 @@ scrolledwindow#DialogNotebook
   padding: 4px;
 }
 
-/* HACK: INKSCAPE Clean window buttons control */
 window > headerbar > box.horizontal.left:dir(ltr) {
   margin-left: 5px;
 }

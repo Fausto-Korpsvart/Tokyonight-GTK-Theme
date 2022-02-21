@@ -14637,19 +14637,19 @@ scrollbar {
 }
 
 scrollbar.top {
-  border-bottom: 1px solid rgba(239, 240, 242, 0.12);
+  border-bottom: transparent;
 }
 
 scrollbar.bottom {
-  border-top: 1px solid rgba(239, 240, 242, 0.12);
+  border-bottom: transparent;
 }
 
 scrollbar.left {
-  border-right: 1px solid rgba(239, 240, 242, 0.12);
+  border-bottom: transparent;
 }
 
 scrollbar.right {
-  border-left: 1px solid rgba(239, 240, 242, 0.12);
+  border-bottom: transparent;
 }
 
 scrollbar slider {
@@ -14709,13 +14709,13 @@ scrollbar.overlay-indicator:not(.dragging):not(.hovering) button {
   margin: 3px;
   border: 1px solid rgba(44, 44, 44, 0.3);
   border-radius: 9999px;
-  background-color: rgba(239, 240, 242, 0.5);
+  background-color: transparent;
   background-clip: padding-box;
   -gtk-icon-source: none;
 }
 
 scrollbar.overlay-indicator:not(.dragging):not(.hovering) button:disabled {
-  background-color: rgba(239, 240, 242, 0.3);
+  background-color: transparent;
 }
 
 scrollbar.overlay-indicator:not(.dragging):not(.hovering).horizontal slider {
@@ -14755,19 +14755,51 @@ scrollbar button {
 }
 
 scrollbar.vertical button.down {
-  -gtk-icon-source: -gtk-icontheme('pan-down-symbolic');
+  -gtk-icon-source: transparent;
+  background-color: transparent;
+  color: transparent;
+}
+
+scrollbar.vertical button.down:hover {
+  -gtk-icon-source: transparent;
+  background-color: transparent;
+  color: transparent;
 }
 
 scrollbar.vertical button.up {
-  -gtk-icon-source: -gtk-icontheme('pan-up-symbolic');
+  -gtk-icon-source: transparent;
+  background-color: transparent;
+  color: transparent;
+}
+
+scrollbar.vertical button.up:hover {
+  -gtk-icon-source: transparent;
+  background-color: transparent;
+  color: transparent;
 }
 
 scrollbar.horizontal button.down {
-  -gtk-icon-source: -gtk-icontheme('pan-end-symbolic');
+  -gtk-icon-source: transparent;
+  background-color: transparent;
+  color: transparent;
+}
+
+scrollbar.horizontal button.down:hover {
+  -gtk-icon-source: transparent;
+  background-color: transparent;
+  color: transparent;
 }
 
 scrollbar.horizontal button.up {
-  -gtk-icon-source: -gtk-icontheme('pan-start-symbolic');
+  -gtk-icon-source: transparent;
+  background-color: transparent;
+  color: transparent;
+}
+
+scrollbar.horizontal button.up:hover {
+  -gtk-icon-source: transparent;
+  background-color: transparent;
+  color: transparent;
 }
 
 /**********
@@ -17041,13 +17073,11 @@ button.titlebutton:not(.suggested-action):not(.destructive-action).minimize:acti
   background-color: #8f5e15;
   color: transparent;
 }
-
 button.titlebutton:not(.suggested-action):not(.destructive-action).maximize:hover,
 button.titlebutton:not(.suggested-action):not(.destructive-action).maximize:active {
   background-color: #33635c;
   color: transparent;
 }
-
 button.titlebutton:not(.suggested-action):not(.destructive-action).close:hover,
 button.titlebutton:not(.suggested-action):not(.destructive-action).close:active {
   color: transparent;
@@ -17066,13 +17096,11 @@ button.titlebutton:not(.suggested-action):not(.destructive-action).minimize:back
   background-color: #e0af68;
   color: transparent;
 }
-
 button.titlebutton:not(.suggested-action):not(.destructive-action).maximize:backdrop:hover,
 button.titlebutton:not(.suggested-action):not(.destructive-action).maximize:backdrop:active {
   background-color: #9ece6a;
   color: transparent;
 }
-
 button.titlebutton:not(.suggested-action):not(.destructive-action).close:backdrop:hover,
 button.titlebutton:not(.suggested-action):not(.destructive-action).close:backdrop:active {
   background-color: #f7768e;

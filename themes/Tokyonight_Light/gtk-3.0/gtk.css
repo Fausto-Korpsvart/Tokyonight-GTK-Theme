@@ -14378,7 +14378,6 @@ popover.background toolbar {
   background-color: #eff0f2;
 }
 
-/* NOTE: ** Vince fixed issues */
 popover.background.combo viewport.frame > list {
   background-color: transparent;
 }
@@ -14429,7 +14428,6 @@ popover.background list separator {
 /*************
  * Notebooks *
  *************/
-/* NOTE: IDK Font color in tabs - see Gedit settings */
 tabbox > tab,
 notebook > header tab {
   transition: all 75ms cubic-bezier(0, 0, 0.2, 1), background-size 0ms,
@@ -14630,19 +14628,19 @@ scrollbar {
 }
 
 scrollbar.top {
-  border-bottom: 1px solid rgba(36, 40, 59, 0.12);
+  border-bottom: transparent;
 }
 
 scrollbar.bottom {
-  border-top: 1px solid rgba(36, 40, 59, 0.12);
+  border-bottom: transparent;
 }
 
 scrollbar.left {
-  border-right: 1px solid rgba(36, 40, 59, 0.12);
+  border-bottom: transparent;
 }
 
 scrollbar.right {
-  border-left: 1px solid rgba(36, 40, 59, 0.12);
+  border-bottom: transparent;
 }
 
 scrollbar slider {
@@ -14656,15 +14654,15 @@ scrollbar slider {
 }
 
 scrollbar slider:hover {
-  background-color: rgba(36, 40, 59, 0.6);
+  background-color: rgba(124, 126, 137, 0.9);
 }
 
 scrollbar slider:active {
-  background-color: rgba(36, 40, 59, 0.87);
+  background-color: rgba(124, 126, 137, 0.9);
 }
 
 scrollbar slider:disabled {
-  background-color: rgba(36, 40, 59, 0.26);
+  background-color: rgba(124, 126, 137, 0.9);
 }
 
 scrollbar.fine-tune slider {
@@ -14702,13 +14700,13 @@ scrollbar.overlay-indicator:not(.dragging):not(.hovering) button {
   margin: 3px;
   border: 1px solid rgba(239, 240, 242, 0.3);
   border-radius: 9999px;
-  background-color: rgba(36, 40, 59, 0.38);
+  background-color: transparent;
   background-clip: padding-box;
   -gtk-icon-source: none;
 }
 
 scrollbar.overlay-indicator:not(.dragging):not(.hovering) button:disabled {
-  background-color: rgba(36, 40, 59, 0.26);
+  background-color: transparent;
 }
 
 scrollbar.overlay-indicator:not(.dragging):not(.hovering).horizontal slider {
@@ -14748,19 +14746,51 @@ scrollbar button {
 }
 
 scrollbar.vertical button.down {
-  -gtk-icon-source: -gtk-icontheme('pan-down-symbolic');
+  -gtk-icon-source: transparent;
+  background-color: transparent;
+  color: transparent;
+}
+
+scrollbar.vertical button.down:hover {
+  -gtk-icon-source: transparent;
+  background-color: transparent;
+  color: transparent;
 }
 
 scrollbar.vertical button.up {
-  -gtk-icon-source: -gtk-icontheme('pan-up-symbolic');
+  -gtk-icon-source: transparent;
+  background-color: transparent;
+  color: transparent;
+}
+
+scrollbar.vertical button.up:hover {
+  -gtk-icon-source: transparent;
+  background-color: transparent;
+  color: transparent;
 }
 
 scrollbar.horizontal button.down {
-  -gtk-icon-source: -gtk-icontheme('pan-end-symbolic');
+  -gtk-icon-source: transparent;
+  background-color: transparent;
+  color: transparent;
+}
+
+scrollbar.horizontal button.down:hover {
+  -gtk-icon-source: transparent;
+  background-color: transparent;
+  color: transparent;
 }
 
 scrollbar.horizontal button.up {
-  -gtk-icon-source: -gtk-icontheme('pan-start-symbolic');
+  -gtk-icon-source: transparent;
+  background-color: transparent;
+  color: transparent;
+}
+
+scrollbar.horizontal button.up:hover {
+  -gtk-icon-source: transparent;
+  background-color: transparent;
+  color: transparent;
 }
 
 /**********
@@ -16084,7 +16114,6 @@ button.file separator {
   background-color: transparent;
 }
 
-/* HACK: 06 Gnome Settings small gap in sidebar */
 window > leaflet > box > scrolledwindow > viewport > stack {
   padding-right: 10px;
 }
@@ -16945,7 +16974,6 @@ colorchooser .popover.osd:backdrop {
 /**********************
  * Window Decorations *
  **********************/
-/* NOTE: 03 Border window decorations */
 decoration {
   transition: box-shadow 75ms cubic-bezier(0, 0, 0.2, 1);
   border-radius: 14px;
@@ -17016,7 +17044,6 @@ messagedialog.csd decoration {
   background-color: #24283b;
 }
 
-/* NOTE: 01 Window Control Buttons */
 button.titlebutton:not(.suggested-action):not(.destructive-action) {
   min-height: 14px;
   min-width: 14px;
@@ -17024,14 +17051,12 @@ button.titlebutton:not(.suggested-action):not(.destructive-action) {
   margin: 0 3px;
 }
 
-/* 01 - Inner icons in window control buttons */
 button.titlebutton:not(.suggested-action):not(.destructive-action).minimize,
 button.titlebutton:not(.suggested-action):not(.destructive-action).maximize,
 button.titlebutton:not(.suggested-action):not(.destructive-action).close {
   color: transparent;
 }
 
-/* 01 - Inner icons in window control buttons - Hover and active */
 button.titlebutton:not(.suggested-action):not(.destructive-action).minimize:hover,
 button.titlebutton:not(.suggested-action):not(.destructive-action).minimize:active {
   background-color: #8f5e15;
@@ -17048,7 +17073,6 @@ button.titlebutton:not(.suggested-action):not(.destructive-action).close:active 
   background-color: #8c4351;
 }
 
-/* 01 - Window control buttons - Color of buttons in backdrop window */
 button.titlebutton:not(.suggested-action):not(.destructive-action).minimize:backdrop,
 button.titlebutton:not(.suggested-action):not(.destructive-action).maximize:backdrop,
 button.titlebutton:not(.suggested-action):not(.destructive-action).close:backdrop {
@@ -17056,7 +17080,6 @@ button.titlebutton:not(.suggested-action):not(.destructive-action).close:backdro
   color: transparent;
 }
 
-/* 01 - Window control buttons - Hover color in active window */
 button.titlebutton:not(.suggested-action):not(.destructive-action).minimize:backdrop:hover,
 button.titlebutton:not(.suggested-action):not(.destructive-action).minimize:backdrop:active {
   background-color: #e0af68;
@@ -17073,7 +17096,6 @@ button.titlebutton:not(.suggested-action):not(.destructive-action).close:backdro
   color: transparent;
 }
 
-/* 01 - Window control buttons - Buttons color in active and normal modes */
 button.titlebutton:not(.suggested-action):not(.destructive-action).minimize {
   background-color: #e0af68;
 }
@@ -17372,7 +17394,6 @@ popover.emoji-completion .emoji:hover {
   font-weight: 700;
 }
 
-/* NOTE: 02 Nautilus font color in selected place */
 .nautilus-window.background.csd
   placessidebar
   > viewport.frame
@@ -17489,7 +17510,6 @@ filechooser
   background-color: rgba(239, 240, 242, 0.04);
 }
 
-/* NOTE: 02 Nautilus Tab selected styles */
 .nautilus-window.background.csd notebook > header > tabs tab:active,
 .nautilus-window.background.csd notebook > header > tabs tab:checked,
 .nautilus-window.background.csd notebook > header > tabs tab button.flat:active,
@@ -17718,7 +17738,6 @@ filechooser
   margin: 0;
 }
 
-/* NOTE: 02 Nautilus Pathbar button */
 .path-bar-box
   .linked.nautilus-path-bar
   button:not(.suggested-action):not(.destructive-action):last-child:dir(ltr),
@@ -19142,7 +19161,6 @@ tabbox > tab button {
   border-bottom-left-radius: 12px;
 }
 
-/* HACK: Weather styles */
 window > deck > box > stack > statuspage viewport.frame {
 	background-color: #24283b;
 }
@@ -20755,7 +20773,6 @@ window.background.csd.unified headerbar.selection-mode {
   box-shadow: none;
 }
 
-/* NOTE: 02 Nautilus border window decoratio (Lines added taken from css-dark file) */
 window.background.csd.unified,
 window.background.csd.unified > decoration,
 window.background.csd.unified > decoration-overlay {

@@ -281,7 +281,7 @@ entry:disabled {
 spinbutton.search.vertical,
 spinbutton.search:not(.vertical),
 entry.search {
-  border-radius: 9999px;
+  border-radius: 7px;
 }
 
 spinbutton.flat.vertical,
@@ -1606,6 +1606,7 @@ searchbar > revealer > box {
  ***************/
 headerbar button:not(.suggested-action):not(.destructive-action) {
   color: rgba(239, 240, 242, 0.7);
+  border-radius: 6px;
 }
 
 headerbar
@@ -2552,19 +2553,19 @@ scrollbar {
 }
 
 scrollbar.top {
-  border-bottom: 1px solid rgba(239, 240, 242, 0.12);
+  border-bottom: transparent;
 }
 
 scrollbar.bottom {
-  border-top: 1px solid rgba(239, 240, 242, 0.12);
+  border-bottom: transparent;
 }
 
 scrollbar.left {
-  border-right: 1px solid rgba(239, 240, 242, 0.12);
+  border-bottom: transparent;
 }
 
 scrollbar.right {
-  border-left: 1px solid rgba(239, 240, 242, 0.12);
+  border-bottom: transparent;
 }
 
 scrollbar > range > trough > slider {
@@ -4709,6 +4710,7 @@ windowcontrols button:not(.suggested-action):not(.destructive-action) {
   min-width: 14px;
   padding: 0;
   margin: 0 3px;
+  border-radius: 9999px;
 }
 
 windowcontrols button:not(.suggested-action):not(.destructive-action).minimize,
@@ -4736,7 +4738,6 @@ windowcontrols
   background-color: #8f5e15;
   color: transparent;
 }
-
 windowcontrols
   button:not(.suggested-action):not(.destructive-action).maximize:hover,
 windowcontrols
@@ -4744,7 +4745,6 @@ windowcontrols
   background-color: #33635c;
   color: transparent;
 }
-
 windowcontrols
   button:not(.suggested-action):not(.destructive-action).close:hover,
 windowcontrols
