@@ -13604,8 +13604,8 @@ headerbar .documents-entry-tag {
 headerbar.windowhandle
   viewswitcher
   button:not(.titlebutton):not(.suggested-action):not(.destructive-action) {
-  border-radius: 0 0 12px 12px;
-  margin: 0;
+	border-radius: 6px;
+	margin: 5px 2px;
   min-width: 120px;
   padding: 0;
   background-image: none;
@@ -13634,8 +13634,8 @@ headerbar.windowhandle
 headerbar.windowhandle
   viewswitcher
   button:not(.titlebutton):not(.suggested-action):not(.destructive-action):checked {
-  background-color: #d5d6db;
-  color: rgba(0, 0, 0, 0.87);
+  background-color: #2f303a;
+  color: #eff0f2;
 }
 
 headerbar.windowhandle
@@ -18484,6 +18484,7 @@ box.horizontal
   row.activatable,
 list.navigation-sidebar > row {
   border-radius: 6px;
+  margin: 1px 3px;
 }
 
 window.background.csd
@@ -18542,7 +18543,7 @@ box.horizontal
   list:not(.view):not(.tweak-group)
   row.activatable:selected,
 list.navigation-sidebar > row:selected {
-  background-color: #d5d6db;
+  background-color: #2f303a;
 }
 
 window.background.csd
@@ -18725,7 +18726,7 @@ box.horizontal
   row.activatable:selected
   label,
 list.navigation-sidebar > row:selected label {
-  color: rgba(0, 0, 0, 0.87);
+  color: #eff0f2;
 }
 
 .csd .tweak-categories {
