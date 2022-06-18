@@ -24196,49 +24196,41 @@ scrollbar button {
 }
 
 scrollbar.vertical button.down {
-  -gtk-icon-source: transparent;
   background-color: transparent;
   color: transparent;
 }
 
 scrollbar.vertical button.down:hover {
-  -gtk-icon-source: transparent;
   background-color: transparent;
   color: transparent;
 }
 
 scrollbar.vertical button.up {
-  -gtk-icon-source: transparent;
   background-color: transparent;
   color: transparent;
 }
 
 scrollbar.vertical button.up:hover {
-  -gtk-icon-source: transparent;
   background-color: transparent;
   color: transparent;
 }
 
 scrollbar.horizontal button.down {
-  -gtk-icon-source: transparent;
   background-color: transparent;
   color: transparent;
 }
 
 scrollbar.horizontal button.down:hover {
-  -gtk-icon-source: transparent;
   background-color: transparent;
   color: transparent;
 }
 
 scrollbar.horizontal button.up {
-  -gtk-icon-source: transparent;
   background-color: transparent;
   color: transparent;
 }
 
 scrollbar.horizontal button.up:hover {
-  -gtk-icon-source: transparent;
   background-color: transparent;
   color: transparent;
 }
