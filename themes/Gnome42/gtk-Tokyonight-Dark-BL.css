@@ -79,6 +79,7 @@ window.csd:backdrop {
 
 window.csd.popup {
   border-radius: 12px;
+  box-shadow: none;
 }
 
 window.csd.dialog.message {
@@ -90,7 +91,7 @@ window.csd.dialog.message {
   padding: 2px;
   border-radius: 0;
   background-color: #1a1b26;
-  border: 1px solid #4b4b4b;
+  border: 1px solid rgba(239, 240, 242, 0.2);
 }
 
 .solid-csd window.csd:backdrop {

@@ -779,18 +779,18 @@ StWidget.focused .app-well-app-running-dot {
 }
 
 .modal-dialog-linked-button:last-child {
-  color: rgba(0, 0, 0, 0.87);
-  background-color: #d5d6db;
+  color: #24283b;
+  background-color: #c0caf5;
 }
 
 .modal-dialog-linked-button:hover:last-child {
-  color: rgba(15, 15, 20, 0.87);
-  background-color: #f7f7f7;
+  color: #24283b;
+  background-color: #99a7df;
 }
 
 .modal-dialog-linked-button:active:last-child {
-  color: rgba(15, 15, 20, 0.87);
-  background-color: #c0caf5;
+  color: #d5d6db;
+  background-color: #8c4351;
 }
 
 .modal-dialog-linked-button:insensitive:last-child {
@@ -2507,7 +2507,7 @@ StEntry StLabel.hint-text,
 #panel.lock-screen .panel-button:checked {
   color: rgba(192, 202, 245, 0.9);
   background-color: transparent;
-  box-shadow: inset 0 0 0 1000px rgba(239, 240, 242, 0.2);
+  box-shadow: inset 0 0 0 1000px rgba(26, 27, 38, 1);
 }
 
 #panel:overview .panel-button.clock-display:active,
@@ -3381,7 +3381,7 @@ StScrollBar StButton#hhandle:active {
 }
 
 .window-close {
-  background-color: #242424;
+  background-color: #24283b;
   color: #eff0f2;
   border-radius: 21px;
   padding: 3px;
@@ -3393,12 +3393,12 @@ StScrollBar StButton#hhandle:active {
 
 .window-close:hover {
   color: #eff0f2;
-  background-color: #333333;
+  background-color: #33635c;
 }
 
 .window-close:active {
   color: #eff0f2;
-  background-color: #151515;
+  background-color: #8c4351;
 }
 
 .workspace-background {
