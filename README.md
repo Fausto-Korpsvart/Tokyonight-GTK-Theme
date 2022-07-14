@@ -1,3 +1,8 @@
+![Tokyo Night](https://github.com/Fausto-Korpsvart/Tokyo-Night-GTK-Theme/blob/master/screenshots/tokyonight_dark_theme.png)
+**Tokyo Night Dark**
+![Tokyo Night](https://github.com/Fausto-Korpsvart/Tokyo-Night-GTK-Theme/blob/master/screenshots/tokyonight_light_theme.png)
+**Tokyo Night Light**
+
 ## Small Description
 <ins>**Tokyonight**</ins> is a GTK theme based on the colour palette of the [Tokyonight for Neovim](https://github.com/folke/tokyonight.nvim) by [@Folke](https://github.com/folke), the [Graphite GTK theme](https://github.com/vinceliuice/Graphite-gtk-theme) by [@VinceLiuice](https://github.com/vinceliuice) and the [Suru Plus](https://github.com/gusbemacbe/suru-plus) icons by [@gusbemacbe.](https://github.com/gusbemacbe)
 
@@ -15,14 +20,19 @@ As I mentioned before, the **GTK4** themes don't need to be applied with **Tweak
 
 This is a small table of the themes that are available so far, I hope to be able to add a few more of the themes I use in my Neovim setup.
 
-|[Catppuccin](https://www.pling.com/p/1715554)|[Material](https://www.pling.com/p/1706139)|[Rosé Pine](https://www.pling.com/p/1810530)|
-|------|-------|-------|
-|Catppuccin Mocha Border|Material Deep Ocean Border|Rosé Pine Border|
-|Catppuccin Mocha Borderless|Material Deep Ocean Borderless|Rosé Pine Borderless|
-|Catppuccin Macchiato Border|Material Palenight Border|Rosé Pine Moon Border|
-|Catppuccin Macchiato Borderless|Material Palenight Borderless|Rosé Pine Moon Borderless|
-
-|[Gruvbox](https://www.pling.com/p/1681313)|[Everforest](https://www.pling.com/p/1695467)|[Kanagawa](https://www.pling.com/p/1810560)|[Tokyonight](https://www.pling.com/p/1681315)|
+|[Catppuccin](https://www.pling.com/p/1715554)|[Material](https://www.pling.com/p/1706139)|[Rosé Pine](https://www.pling.com/p/1810530)|[Tokyonight](https://www.pling.com/p/1681315)|
 |------|-------|-------|-------|
-|Gruvbox Material Border|Everforest Border|Kanagawa Border|Tokyionight Dark|
-|Gruvbox Material Borderless|Everforest Borderless|Kanagawa Borderless|Tokyonight Storm| 
+|Catppuccin Mocha Border|Material Deep Ocean Border|Rosé Pine Border|Tokyionight Dark Border|
+|Catppuccin Mocha Borderless|Material Deep Ocean Borderless|Rosé Pine Borderless|Tokyionight Dark Borderless|
+|Catppuccin Macchiato Border|Material Palenight Border|Rosé Pine Moon Border|Tokyonight Storm Border|
+|Catppuccin Macchiato Borderless|Material Palenight Borderless|Rosé Pine Moon Borderless|Tokyonight Storm Borderless|
+
+|[Gruvbox](https://www.pling.com/p/1681313)|[Everforest](https://www.pling.com/p/1695467)|[Kanagawa](https://www.pling.com/p/1810560)|
+|------|-------|-------|
+|Gruvbox Material Border|Everforest Border|Kanagawa Border|
+|Gruvbox Material Borderless|Everforest Borderless|Kanagawa Borderless|
+
+You all know that you can leave comments to report bugs or give your opinion about the theme, so please leave comments to report bugs and get them fixed as soon as possible.
+
+#### **<ENJOY IT!! :nerd_face:/>**
+
