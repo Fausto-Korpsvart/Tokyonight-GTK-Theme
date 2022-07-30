@@ -1,67 +1,48 @@
 /* GTK NAMED COLORS
    ----------------
    use responsibly! */
-/*
-widget text/foreground color */
+
+/* widget text/foreground color */
 @define-color theme_fg_color #eff0f2;
-/*
-text color for entries, views and content in general */
+/* text color for entries, views and content in general */
 @define-color theme_text_color #eff0f2;
-/*
-widget base background color */
+/* widget base background color */
 @define-color theme_bg_color #1a1b26;
-/*
-text widgets and the like base background color */
+/* text widgets and the like base background color */
 @define-color theme_base_color #24283b;
-/*
-base background color of selections */
+/* base background color of selections */
 @define-color theme_selected_bg_color #d5d6db;
-/*
-text/foreground color of selections */
+/* text/foreground color of selections */
 @define-color theme_selected_fg_color rgba(0, 0, 0, 0.87);
-/*
-base background color of insensitive widgets */
+/* base background color of insensitive widgets */
 @define-color insensitive_bg_color #1a1b26;
-/*
-text foreground color of insensitive widgets */
+/* text foreground color of insensitive widgets */
 @define-color insensitive_fg_color rgba(239, 240, 242, 0.5);
-/*
-insensitive text widgets and the like base background color */
+/* insensitive text widgets and the like base background color */
 @define-color insensitive_base_color #343b58;
-/*
-widget text/foreground color on backdrop windows */
+/* widget text/foreground color on backdrop windows */
 @define-color theme_unfocused_fg_color #eff0f2;
-/*
-text color for entries, views and content in general on backdrop windows */
+/* text color for entries, views and content in general on backdrop windows */
 @define-color theme_unfocused_text_color #eff0f2;
-/*
-widget base background color on backdrop windows */
+/* widget base background color on backdrop windows */
 @define-color theme_unfocused_bg_color #1a1b26;
-/*
-text widgets and the like base background color on backdrop windows */
+/* text widgets and the like base background color on backdrop windows */
 @define-color theme_unfocused_base_color #1a1b26;
-/*
-base background color of selections on backdrop windows */
+/* base background color of selections on backdrop windows */
 @define-color theme_unfocused_selected_bg_color #d5d6db;
-/*
-text/foreground color of selections on backdrop windows */
+/* text/foreground color of selections on backdrop windows */
 @define-color theme_unfocused_selected_fg_color rgba(0, 0, 0, 0.87);
-/*
-insensitive color on backdrop windows */
+/* insensitive color on backdrop windows */
 @define-color unfocused_insensitive_color rgba(239, 240, 242, 0.5);
-/*
-widgets main borders color */
+/* widgets main borders color */
 @define-color borders rgba(239, 240, 242, 0.12);
-/*
-widgets main borders color on backdrop windows */
+/* widgets main borders color on backdrop windows */
 @define-color unfocused_borders rgba(239, 240, 242, 0.12);
-/*
-these are pretty self explicative */
+/* these are pretty self explicative */
 @define-color warning_color #FDD633;
 @define-color error_color #F28B82;
 @define-color success_color #81C995;
-/*
-these colors are exported for the window manager and shouldn't be used in applications,
+/* these colors are exported for the window manager and shouldn't be used in applications,
 read if you used those and something break with a version upgrade you're on your own... */
 @define-color wm_title #eff0f2;
 @define-color wm_unfocused_title rgba(239, 240, 242, 0.7);
@@ -71,8 +52,7 @@ read if you used those and something break with a version upgrade you're on your
 @define-color wm_button_close_icon #1a1b26;
 @define-color wm_button_close_hover_bg #d5d6db;
 @define-color wm_button_close_active_bg #c7c7c7;
-/*
-FIXME this is really an API */
+/* FIXME this is really an API */
 @define-color content_view_bg #1a1b26;
 @define-color placeholder_text_color silver;
 /* Very contrasty background for text views (@theme_text_color foreground) */
@@ -14012,7 +13992,8 @@ window#gnome-system-monitor.background.csd
 filechooser stack.view scrolledwindow treeview.view header button,
 treeview.view header button:disabled,
 filechooser stack.view scrolledwindow treeview.view header button:disabled {
-  background-color: #1a1b26;
+  background-color: transparent;
+  margin: 1px;
 }
 
 treeview.view button.dnd,
@@ -17335,13 +17316,13 @@ popover.emoji-completion .emoji:hover {
 .nautilus-window.background.csd placessidebar > viewport.frame {
   background-color: transparent;
   color: #eff0f2;
-  margin: 4px;
+  margin: 2px 0 2px 6px;
   border-radius: 12px;
 }
 
 .nautilus-window.background.csd placessidebar > viewport.frame > list {
   background: none;
-  padding: 2px;
+  padding: 4px 0 4px 4px;
 }
 
 .nautilus-window.background.csd
@@ -17505,8 +17486,8 @@ filechooser
 .nautilus-window.background.csd notebook > stack {
   background-color: #24283b;
   border-radius: 12px;
-  border: 1px solid rgba(65, 72, 104, 0.6);
-  margin: 0 6px 6px 0;
+  border: 1px solid rgba(65, 72, 104, 0.2);
+  margin: 0 6px 6px 6px;
 }
 
 .nautilus-window.background.csd
