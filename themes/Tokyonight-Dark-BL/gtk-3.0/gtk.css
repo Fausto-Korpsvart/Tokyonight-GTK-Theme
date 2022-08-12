@@ -23018,8 +23018,16 @@ box.vertical headerbar {
   background-color: #1a1b26;
 }
 
-headerbar > box.left,
-headerbar > box.right {
+.nautilus-window headerbar > box.horizontal.left {
+  padding: 0 6px;
+  padding-right: 60px;
+}
+
+headerbar > box.left {
+  padding: 0 12px;
+}
+
+headerbar > box.right{
   padding: 0 3px;
 }
 
@@ -26497,7 +26505,7 @@ button.titlebutton:not(.suggested-action):not(.destructive-action) {
   min-height: 12px;
   min-width: 12px;
   padding: 0;
-  margin: 0 3px;
+  margin: 0 2px;
 }
 
 /* 01 - Inner icons in window control buttons */
