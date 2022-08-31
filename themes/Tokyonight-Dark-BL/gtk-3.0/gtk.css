@@ -23019,7 +23019,7 @@ box.vertical headerbar {
 }
 
 .nautilus-window headerbar > box.horizontal.left {
-  padding: 0 6px;
+  padding: 0 10px;
   padding-right: 60px;
 }
 
@@ -26794,13 +26794,13 @@ popover.emoji-completion .emoji:hover {
 .nautilus-window.background.csd placessidebar > viewport.frame {
   background-color: transparent;
   color: #eff0f2;
-  margin: 2px 0 2px 6px;
+  margin: 0;
   border-radius: 12px;
 }
 
 .nautilus-window.background.csd placessidebar > viewport.frame > list {
   background: none;
-  padding: 4px 0 4px 4px;
+  padding: 0 0 0 8px;
 }
 
 .nautilus-window.background.csd
@@ -26965,7 +26965,7 @@ filechooser
   background-color: #24283b;
   border-radius: 12px;
   border: 1px solid rgba(65, 72, 104, 0.2);
-  margin: 0 6px 6px 6px;
+  margin: 0 6px 6px;
 }
 
 .nautilus-window.background.csd
