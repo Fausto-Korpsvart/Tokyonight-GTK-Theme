@@ -1,7 +1,5 @@
-![Tokyo Night](https://github.com/Fausto-Korpsvart/Tokyo-Night-GTK-Theme/blob/master/screenshots/tokyonight_dark_theme.png)
-**Tokyo Night Dark**
-![Tokyo Night](https://github.com/Fausto-Korpsvart/Tokyo-Night-GTK-Theme/blob/master/screenshots/tokyonight_light_theme.png)
-**Tokyo Night Light**
+![Tokyo Night](https://raw.githubusercontent.com/Fausto-Korpsvart/Tokyo-Night-GTK-Theme/master/screenshots/Tokyonight.png)
+**Tokyonight GTK**
 
 ## Small Description
 <ins>**Tokyonight**</ins> is a GTK theme based on the colour palette of the [Tokyonight for Neovim](https://github.com/folke/tokyonight.nvim) by [@Folke](https://github.com/folke), the [Graphite GTK theme](https://github.com/vinceliuice/Graphite-gtk-theme) by [@VinceLiuice](https://github.com/vinceliuice) and the [Suru Plus](https://github.com/gusbemacbe/suru-plus) icons by [@gusbemacbe.](https://github.com/gusbemacbe)
