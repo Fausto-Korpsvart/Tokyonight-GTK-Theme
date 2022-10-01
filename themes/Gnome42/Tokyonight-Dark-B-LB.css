@@ -11,69 +11,62 @@ define variables for them in _colors.scss */
 /* Tokyonight Dark Border Legacy Buttons Theme */
 
 /* The main accent color and the matching text value */
-@define-color accent_bg_color #d5d6db;
-@define-color accent_fg_color #24283b;
-@define-color accent_color @accent_bg_color;
+@define-color accent_color #7aa2f7;
+@define-color accent_bg_color shade(#7aa2f7, 0.5);
+@define-color accent_fg_color #c0caf5;
 
 /* Destructive-action buttons */
-@define-color destructive_bg_color #f7768e;
-@define-color destructive_fg_color #eff0f2;
 @define-color destructive_color #f7768e;
+@define-color destructive_bg_color shade(#f7768e, 0.5);
+@define-color destructive_fg_color #c0caf5;
 
 /* Levelbars, entries, labels and infobars. These don't need text colors */
-@define-color success_bg_color #9ece6a;
-@define-color success_fg_color #eff0f2;
 @define-color success_color #9ece6a;
-@define-color warning_bg_color #ff9e64;
-@define-color warning_fg_color #24283b;
+@define-color success_bg_color shade(#9ece6a, 0.5);
+@define-color success_fg_color #c0caf5;
 @define-color warning_color #ff9e64;
-@define-color error_bg_color #f7768e;
-@define-color error_fg_color #eff0f2;
+@define-color warning_bg_color shade(##ff9e64, 0.5);
+@define-color warning_fg_color #c0caf5;
 @define-color error_color #f7768e;
+@define-color error_bg_color shade(#f7768e, 0.5);
+@define-color error_fg_color #c0caf5;
 
 /* Window */
 @define-color window_bg_color #1a1b26;
-@define-color window_fg_color #eff0f2;
+@define-color window_fg_color #c0caf5;
 
 /* Views - e.g. text view or tree view */
 @define-color view_bg_color #1a1b26;
-@define-color view_fg_color #eff0f2;
+@define-color view_fg_color #c0caf5;
 
 /* Header bar, search bar, tab bar */
 @define-color headerbar_bg_color #1a1b26;
-@define-color headerbar_fg_color #eff0f2;
-@define-color headerbar_border_color #eff0f2;
+@define-color headerbar_fg_color #c0caf5;
+@define-color headerbar_border_color #c0caf5;
 @define-color headerbar_backdrop_color @window_bg_color;
 @define-color headerbar_shade_color rgba(0, 0, 0, 0.36);
 
 /* Cards, boxed lists */
-@define-color card_bg_color rgba(239, 240, 242, 0.05);
-@define-color card_fg_color #eff0f2;
+@define-color card_bg_color rgba(192, 202, 245, 0.05);
+@define-color card_fg_color #c0caf5;
 @define-color card_shade_color rgba(0, 0, 0, 0.36);
 
 /* Popovers */
-@define-color popover_bg_color #1F2233;
-@define-color popover_fg_color #eff0f2;
-
-/* Miscellaneous */
-@define-color shade_color rgba(0, 0, 0, 0.36);
-@define-color scrollbar_outline_color rgba(0, 0, 0, 0.5);
+@define-color popover_bg_color #3b4261;
+@define-color popover_fg_color #c0caf5;
 
 window.csd {
   transition: box-shadow 75ms cubic-bezier(0, 0, 0.2, 1);
   border-radius: 12px;
   box-shadow: 0 2px 2.4px -1px rgba(0, 0, 0, 0.2),
     0 4px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 6px 0 rgba(0, 0, 0, 0.12),
-    0 0 0 2px #414868, 0 0 16px transparent;
-  box-shadow: 0 2px 2.4px -1px rgba(0, 0, 0, 0.2),
-    0 4px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 6px 0 rgba(0, 0, 0, 0.12),
-    0 0 0 2px #414868, 0 0 16px transparent;
+    0 0 0 2px #0db9d7, 0 0 16px transparent;
 }
 
 window.csd:backdrop {
   box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.3),
     0 1px 2px -1px rgba(0, 0, 0, 0.24), 0 1px 2px -0.6px rgba(0, 0, 0, 0.17),
-    0 0 0 2px #24283b, 0 0 16px transparent;
+    0 0 0 2px #545c7e, 0 0 16px transparent;
 }
 
 window.csd.popup {
@@ -90,7 +83,7 @@ window.csd.dialog.message {
   padding: 2px;
   border-radius: 0;
   background-color: #1a1b26;
-  border: 2px solid #d5d6db;
+  border: 2px solid #a9b1d6;
 }
 
 .solid-csd window.csd:backdrop {
@@ -145,74 +138,78 @@ windowcontrols
 }
 
 windowcontrols
-  button:not(.suggested-action):not(.destructive-action).minimize:hover {
-  background-color: #2b2c36;
-}
-
+  button:not(.suggested-action):not(.destructive-action).minimize:hover,
 windowcontrols
-  button:not(.suggested-action):not(.destructive-action).minimize:active {
-  background-color: #43444c;
-}
+  button:not(.suggested-action):not(.destructive-action).maximize:hover,
 windowcontrols
-  button:not(.suggested-action):not(.destructive-action).maximize:hover {
-  background-color: #2b2c36;
-}
-
-windowcontrols
-  button:not(.suggested-action):not(.destructive-action).maximize:active {
-  background-color: #43444c;
-}
-
-windowcontrols
-  button.close:not(.suggested-action):not(.destructive-action):hover {
-  background-color: #414868;
-  color: #d5d6db;
-}
-
-windowcontrols
-  button.close:not(.suggested-action):not(.destructive-action):active {
-  background-color: #d5d6db;
-  color: #1a1b26;
-}
-
-windowcontrols
-  button:not(.suggested-action):not(.destructive-action).minimize:backdrop:hover {
-  background-color: #2b2c36;
-}
-
-windowcontrols
-  button:not(.suggested-action):not(.destructive-action).minimize:backdrop:active {
-  background-color: #43444c;
-}
+  button:not(.suggested-action):not(.destructive-action).minimize:backdrop:hover,
 windowcontrols
   button:not(.suggested-action):not(.destructive-action).maximize:backdrop:hover {
   background-color: #2b2c36;
 }
 
 windowcontrols
+  button:not(.suggested-action):not(.destructive-action).minimize:active,
+windowcontrols
+  button:not(.suggested-action):not(.destructive-action).maximize:active,
+windowcontrols
+  button:not(.suggested-action):not(.destructive-action).minimize:backdrop:active,
+windowcontrols
   button:not(.suggested-action):not(.destructive-action).maximize:backdrop:active {
   background-color: #43444c;
 }
 
 windowcontrols
-  button:not(.suggested-action):not(.destructive-action).close:backdrop:hover {
-  background-color: #414868;
-  color: #d5d6db;
-}
-
+  button.close:not(.suggested-action):not(.destructive-action):hover,
 windowcontrols
-  button:not(.suggested-action):not(.destructive-action).close:backdrop:active {
-  background-color: #d5d6db;
+  button:not(.suggested-action):not(.destructive-action).close:backdrop:hover {
+  background-color: #0db9d7;
   color: #1a1b26;
 }
 
-listview,
-list {
-  outline: 2px solid alpha(currentColor, 0.06);
+windowcontrols
+  button.close:not(.suggested-action):not(.destructive-action):active,
+windowcontrols
+  button:not(.suggested-action):not(.destructive-action).close:backdrop:active {
+  background-color: #9d7cd8;
+  color: #1a1b26;
+}
+
+gridview > child:selected,
+modelbutton.flat:selected,
+row:selected,
+calendar:selected,
+calendar > grid > label.day-number:selected {
+  background-color: alpha(currentColor, 0.06);
+}
+
+.view:selected,
+iconview:selected,
+flowbox > flowboxchild:selected,
+calendar > grid > label.today,
+filechooser stack.view scrolledwindow treeview.view:selected,
+stacksidebar row:selected,
+.navigation-sidebar > row:selected {
+  color: #0db9d7;
+  font-weight: 500;
+  background-color: rgba(213, 214, 219, 0.2);
+}
+
+textview text selection:focus,
+textview text selection,
+label > selection,
+entry > text > selection,
+calendar > grid > label.today:selected {
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #a9b1d6;
 }
 
 list.frame {
   border-radius: 12px;
+}
+
+.monospace {
+  font-family: monospace;
 }
 
 headerbar,
@@ -222,8 +219,8 @@ separator {
 
 window contents leaflet separator.sidebar,
 headerbar.vertical {
-  color: rgba(239, 240, 242, 0.1);
-  box-shadow: 1px 1px rgba(239, 240, 242, 0.1);
+  color: rgba(192, 202, 254, 0.1);
+  box-shadow: 1px 1px rgba(192, 202, 254, 0.1);
 }
 
 popover.menu box.inline-buttons {
@@ -258,10 +255,10 @@ popover.menu box.circular-buttons button.circular.image-button.model:focus {
 popover.menu > arrow,
 popover.menu.background > contents {
   padding: 6px;
-  background-color: #24283b;
+  background-color: #3b4261;
   background-clip: border-box;
   border-radius: 12px;
-  border: 2px solid #d5d6db;
+  border: 2px solid #a9b1d6;
 }
 
 popover.menu.background separator {
@@ -287,7 +284,7 @@ popover.menu modelbutton {
   min-height: 22px;
   min-width: 56px;
   padding: 3px 9px;
-  color: #eff0f2;
+  color: #c0caf5;
   font: initial;
   text-shadow: none;
   box-shadow: none;
@@ -296,12 +293,12 @@ popover.menu modelbutton {
 
 popover.menu modelbutton:hover {
   transition: none;
-  background-color: #d5d6db;
+  background-color: #a9b1d6;
   color: rgba(0, 0, 0, 0.87);
 }
 
 popover.menu modelbutton:disabled {
-  color: rgba(239, 240, 242, 0.5);
+  color: rgba(192, 202, 254, 0.5);
 }
 
 popover.menu label.title {
@@ -309,9 +306,6 @@ popover.menu label.title {
   padding: 4px 26px;
 }
 
-/************
- * Popovers *
- ************/
 popover.background {
   font: initial;
 }
@@ -325,14 +319,14 @@ popover.background > arrow,
 popover.background > contents {
   transition: box-shadow 75ms cubic-bezier(0, 0, 0.2, 1);
   padding: 6px;
-  background-color: #24283b;
+  background-color: #3b4261;
   border-radius: 12px;
-  border: 2px solid #d5d6db;
+  border: 2px solid #a9b1d6;
 }
 
 popover.background:backdrop > arrow,
 popover.background:backdrop > contents {
-  border: 2px solid #d5d6db;
+  border: 2px solid #a9b1d6;
 }
 
 popover.background > contents > list,
@@ -344,7 +338,7 @@ popover.background > contents > toolbar {
 }
 
 popover.background > contents separator {
-  background-color: rgba(239, 240, 242, 0.12);
+  background-color: rgba(192, 202, 254, 0.12);
   margin: 3px 0;
 }
 
@@ -404,9 +398,9 @@ magnifier {
 
 switch {
   transition: all 75ms cubic-bezier(0, 0, 0.2, 1);
-  margin: 6px 0;
+  margin: 12px 0;
   padding: 0;
-  border: 2px solid rgba(239, 240, 242, 0.7);
+  border: 2px solid rgba(192, 202, 254, 0.7);
   border-radius: 9999px;
   background-color: transparent;
   background-clip: border-box;
@@ -415,8 +409,8 @@ switch {
 }
 
 switch:checked {
-  background-color: #d5d6db;
-  border-color: #d5d6db;
+  background-color: #a9b1d6;
+  border-color: #a9b1d6;
 }
 
 switch:disabled {
@@ -435,20 +429,20 @@ switch > slider {
   border-radius: 9999px;
   outline: none;
   box-shadow: none;
-  background-color: rgba(239, 240, 242, 0.7);
+  background-color: rgba(192, 202, 254, 0.7);
   border: none;
 }
 
 switch:focus > slider {
-  box-shadow: 0 0 0 10px rgba(239, 240, 242, 0.04);
+  box-shadow: 0 0 0 10px rgba(192, 202, 254, 0.04);
 }
 
 switch:hover > slider {
-  box-shadow: 0 0 0 10px rgba(239, 240, 242, 0.12);
+  box-shadow: 0 0 0 10px rgba(192, 202, 254, 0.12);
 }
 
 switch:focus:hover > slider {
-  box-shadow: 0 0 0 10px rgba(239, 240, 242, 0.12);
+  box-shadow: 0 0 0 10px rgba(192, 202, 254, 0.12);
 }
 
 switch:checked > slider {

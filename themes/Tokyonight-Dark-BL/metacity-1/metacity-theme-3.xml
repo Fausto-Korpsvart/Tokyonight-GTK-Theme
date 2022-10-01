@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <metacity_theme>
   <info>
-    <name>Orchis</name>
-    <author>vinceliucie</author>
+    <name>Tokyonight Dark</name>
+    <author>vinceliucie | mod: fkorpsvart</author>
     <copyright>GPL</copyright>
-    <date>2021</date>
-    <description>Graphite Metacity theme</description>
+    <date>2022</date>
+    <description>Tokyonight Dark Metacity theme</description>
   </info>
 
   <!-- meaningful constants -->
@@ -654,86 +654,6 @@
     <frame focus="yes" state="normal" resize="both" style="utility_focused" />
     <frame focus="no" state="normal" resize="both" style="utility_unfocused" />
     <frame focus="yes" state="maximized" style="blank" />
-    <frame focus="no" state="maximized" style="blank" />
-    <frame focus="yes" state="shaded" style="utility_focused" />
-    <frame focus="no" state="shaded" style="utility_unfocused" />
-    <frame focus="yes" state="maximized_and_shaded" style="blank" />
-    <frame focus="no" state="maximized_and_shaded" style="blank" />
-  </frame_style_set>
-
-  <frame_style_set name="border_style_set">
-    <frame focus="yes" state="normal" resize="both" style="border_focused" />
-    <frame focus="no" state="normal" resize="both" style="border_unfocused" />
-    <frame focus="yes" state="maximized" style="borderless_focused" />
-    <frame focus="no" state="maximized" style="borderless_unfocused" />
-    <frame focus="yes" state="shaded" style="blank" />
-    <frame focus="no" state="shaded" style="blank" />
-    <frame focus="yes" state="maximized_and_shaded" style="blank" />
-    <frame focus="no" state="maximized_and_shaded" style="blank" />
-  </frame_style_set>
-
-  <frame_style_set name="attached_style_set">
-    <frame focus="yes" state="normal" resize="both" style="attached_focused" />
-    <frame focus="no" state="normal" resize="both" style="attached_unfocused" />
-    <frame focus="yes" state="maximized" style="blank" />
-    <frame focus="no" state="maximized" style="blank" />
-    <frame focus="yes" state="shaded" style="blank" />
-    <frame focus="no" state="shaded" style="blank" />
-    <frame focus="yes" state="maximized_and_shaded" style="blank" />
-    <frame focus="no" state="maximized_and_shaded" style="blank" />
-  </frame_style_set>
-
-  <!-- windows -->
-
-  <window type="normal" style_set="normal_style_set" />
-  <window type="dialog" style_set="dialog_style_set" />
-  <window type="modal_dialog" style_set="modal_dialog_style_set" />
-  <window type="menu" style_set="utility_style_set" />
-  <window type="utility" style_set="utility_style_set" />
-  <window type="border" style_set="border_style_set" />
-  <window version=">= 3.2" type="attached" style_set="attached_style_set" />
-
-</metacity_theme>    <frame focus="yes" state="maximized" style="blank" />
-    <frame focus="no" state="maximized" style="blank" />
-    <frame focus="yes" state="shaded" style="utility_focused" />
-    <frame focus="no" state="shaded" style="utility_unfocused" />
-    <frame focus="yes" state="maximized_and_shaded" style="blank" />
-    <frame focus="no" state="maximized_and_shaded" style="blank" />
-  </frame_style_set>
-
-  <frame_style_set name="border_style_set">
-    <frame focus="yes" state="normal" resize="both" style="border_focused" />
-    <frame focus="no" state="normal" resize="both" style="border_unfocused" />
-    <frame focus="yes" state="maximized" style="borderless_focused" />
-    <frame focus="no" state="maximized" style="borderless_unfocused" />
-    <frame focus="yes" state="shaded" style="blank" />
-    <frame focus="no" state="shaded" style="blank" />
-    <frame focus="yes" state="maximized_and_shaded" style="blank" />
-    <frame focus="no" state="maximized_and_shaded" style="blank" />
-  </frame_style_set>
-
-  <frame_style_set name="attached_style_set">
-    <frame focus="yes" state="normal" resize="both" style="attached_focused" />
-    <frame focus="no" state="normal" resize="both" style="attached_unfocused" />
-    <frame focus="yes" state="maximized" style="blank" />
-    <frame focus="no" state="maximized" style="blank" />
-    <frame focus="yes" state="shaded" style="blank" />
-    <frame focus="no" state="shaded" style="blank" />
-    <frame focus="yes" state="maximized_and_shaded" style="blank" />
-    <frame focus="no" state="maximized_and_shaded" style="blank" />
-  </frame_style_set>
-
-  <!-- windows -->
-
-  <window type="normal" style_set="normal_style_set" />
-  <window type="dialog" style_set="dialog_style_set" />
-  <window type="modal_dialog" style_set="modal_dialog_style_set" />
-  <window type="menu" style_set="utility_style_set" />
-  <window type="utility" style_set="utility_style_set" />
-  <window type="border" style_set="border_style_set" />
-  <window version=">= 3.2" type="attached" style_set="attached_style_set" />
-
-</metacity_theme>    <frame focus="yes" state="maximized" style="blank" />
     <frame focus="no" state="maximized" style="blank" />
     <frame focus="yes" state="shaded" style="utility_focused" />
     <frame focus="no" state="shaded" style="utility_unfocused" />

@@ -6,8 +6,8 @@
 
 .Button {
   stroke-width: 0.25;
-  stroke: #eff0f2;
-  fill: #eff0f2;
+  stroke: #c0caf5;
+  fill: #c0caf5;
 }
 
 .Ring {
@@ -26,6 +26,6 @@
 .TouchStrip,
 .TouchRing {
   stroke-width: 0.1 !important;
-  stroke: #eff0f2 !important;
+  stroke: #c0caf5 !important;
   fill: #565f89 !important;
 }
