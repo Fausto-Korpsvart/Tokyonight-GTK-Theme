@@ -13,7 +13,7 @@
 /* base background color of selections */
 @define-color theme_selected_bg_color #3b4261;
 /* text/foreground color of selections */
-@define-color theme_selected_fg_color white;
+@define-color theme_selected_fg_color #e1e2e7;
 /* base background color of insensitive widgets */
 @define-color insensitive_bg_color #e1e2e7;
 /* text foreground color of insensitive widgets */
@@ -31,7 +31,7 @@
 /* base background color of selections on backdrop windows */
 @define-color theme_unfocused_selected_bg_color #3b4261;
 /* text/foreground color of selections on backdrop windows */
-@define-color theme_unfocused_selected_fg_color white;
+@define-color theme_unfocused_selected_fg_color #e1e2e7;
 /* insensitive color on backdrop windows */
 @define-color unfocused_insensitive_color rgba(0, 0, 0, 0.38);
 /* widgets main borders color */
@@ -44,7 +44,7 @@
 @define-color success_color #0F9D58;
 /* these colors are exported for the window manager and shouldn't be used in applications,
 read if you used those and something break with a version upgrade you're on your own... */
-@define-color wm_title white;
+@define-color wm_title #e1e2e7;
 @define-color wm_unfocused_title rgba(225, 226, 231, 0.7);
 @define-color wm_highlight rgba(225, 226, 231, 0.1);
 @define-color wm_bg #343b58;
@@ -57,8 +57,8 @@ read if you used those and something break with a version upgrade you're on your
 @define-color placeholder_text_color #666666;
 /* Very contrasty background for text views (@theme_text_color foreground) */
 @define-color text_view_bg #e1e2e7;
-@define-color budgie_tasklist_indicator_color white;
-@define-color budgie_tasklist_indicator_color_active white;
+@define-color budgie_tasklist_indicator_color #e1e2e7;
+@define-color budgie_tasklist_indicator_color_active #e1e2e7;
 @define-color budgie_tasklist_indicator_color_active_window #999999;
 @define-color budgie_tasklist_indicator_color_attention #F4B400;
 @define-color STRAWBERRY_100 #FF9262;
@@ -225,7 +225,7 @@ button label:disabled {
 label.osd {
   border-radius: 6px;
   background-color: rgba(52, 52, 52, 0.9);
-  color: white;
+  color: #e1e2e7;
 }
 
 .dim-label,
@@ -613,7 +613,7 @@ popover.background.touch-selection button:checked,
 popover.background.magnifier button:checked,
 headerbar.selection-mode
   button:checked:not(.suggested-action):not(.destructive-action) {
-  color: white;
+  color: #e1e2e7;
 }
 
 toast button:disabled,
@@ -698,7 +698,7 @@ actionbar
 button:checked {
   box-shadow: none;
   background-color: #3b4261;
-  color: white;
+  color: #e1e2e7;
 }
 
 actionbar
@@ -1007,7 +1007,7 @@ button.osd:disabled {
 
 button.suggested-action {
   background-color: #3b4261;
-  color: white;
+  color: #e1e2e7;
   box-shadow: none;
 }
 
@@ -1054,7 +1054,7 @@ button.suggested-action.flat:checked {
 
 button.destructive-action {
   background-color: #d93025;
-  color: white;
+  color: #e1e2e7;
   box-shadow: none;
 }
 
@@ -1258,12 +1258,12 @@ list > row button.image-button:not(.flat):checked {
 
 list > row button.image-button.suggested-action:not(.flat) {
   background-color: #3b4261;
-  color: white;
+  color: #e1e2e7;
 }
 
 list > row button.image-button.destructive-action:not(.flat) {
   background-color: #d93025;
-  color: white;
+  color: #e1e2e7;
 }
 
 /*********
@@ -1701,7 +1701,7 @@ headerbar button:focus:not(.suggested-action):not(.destructive-action),
 headerbar button:hover:not(.suggested-action):not(.destructive-action),
 headerbar button:active:not(.suggested-action):not(.destructive-action),
 headerbar button:checked:not(.suggested-action):not(.destructive-action) {
-  color: white;
+  color: #e1e2e7;
 }
 
 headerbar button:disabled:not(.suggested-action):not(.destructive-action) {
@@ -1742,7 +1742,7 @@ headerbar
 
 headerbar entry {
   background-color: rgba(225, 226, 231, 0.04);
-  color: white;
+  color: #e1e2e7;
 }
 
 headerbar entry:disabled {
@@ -1756,7 +1756,7 @@ headerbar entry image {
 
 headerbar entry image:hover,
 headerbar entry image:active {
-  color: white;
+  color: #e1e2e7;
 }
 
 headerbar entry image:disabled {
@@ -1768,7 +1768,7 @@ headerbar {
   padding: 0 6px;
   transition: all 75ms cubic-bezier(0, 0, 0.2, 1);
   background-color: transparent;
-  color: white;
+  color: #e1e2e7;
   box-shadow: none;
 }
 
@@ -1935,7 +1935,7 @@ headerbar.selection-mode {
     color 75ms cubic-bezier(0, 0, 0.2, 1);
   box-shadow: inset 0 1px rgba(225, 226, 231, 0.1);
   background-color: #3b4261;
-  color: white;
+  color: #e1e2e7;
 }
 
 headerbar.selection-mode:backdrop {
@@ -1943,7 +1943,7 @@ headerbar.selection-mode:backdrop {
 }
 
 headerbar.selection-mode .subtitle:link {
-  color: white;
+  color: #e1e2e7;
 }
 
 headerbar.selection-mode .selection-menu {
@@ -2218,7 +2218,7 @@ treeview.view acceleditor > label {
 menubar {
   padding: 0;
   background-color: #343b58;
-  color: white;
+  color: #e1e2e7;
 }
 
 menubar:backdrop {
@@ -2240,7 +2240,7 @@ menubar > item {
 menubar > item:selected {
   transition: none;
   background-color: alpha(currentColor, 0.1);
-  color: white;
+  color: #e1e2e7;
 }
 
 menubar > item:disabled {
@@ -2339,7 +2339,7 @@ popover.menu modelbutton {
 popover.menu modelbutton:hover {
   transition: none;
   background-color: #3b4261;
-  color: white;
+  color: #e1e2e7;
 }
 
 popover.menu modelbutton:disabled {
@@ -2472,7 +2472,7 @@ notebook > header tab:disabled {
 
 notebook > header tab:checked {
   transition: all 75ms cubic-bezier(0, 0, 0.2, 1);
-  background-color: white;
+  background-color: #e1e2e7;
   color: rgba(0, 0, 0, 0.87);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
 }
@@ -4106,7 +4106,7 @@ columnview row:not(:selected) cell editablelabel.editing:focus-within {
 }
 
 columnview row:not(:selected) cell editablelabel.editing text selection {
-  color: white;
+  color: #e1e2e7;
   background-color: #3b4261;
 }
 
@@ -4475,7 +4475,7 @@ separator.sidebar.selection-mode,
 
 .navigation-sidebar > row:selected label,
 .navigation-sidebar > row:selected image {
-  color: white;
+  color: #e1e2e7;
 }
 
 .navigation-sidebar > row:selected:hover {
@@ -4701,7 +4701,7 @@ infobar.action:backdrop > revealer > box,
 infobar.question > revealer > box,
 infobar.question:backdrop > revealer > box {
   background-color: #3b4261;
-  color: white;
+  color: #e1e2e7;
 }
 
 infobar.action > revealer > box button,
@@ -4728,14 +4728,14 @@ infobar.question:backdrop > revealer > box button:focus,
 infobar.question:backdrop > revealer > box button:active,
 infobar.question:backdrop > revealer > box button:checked,
 infobar.question:backdrop > revealer > box button.text-button:not(:disabled) {
-  color: white;
+  color: #e1e2e7;
 }
 
 infobar.action > revealer > box *:link,
 infobar.action:backdrop > revealer > box *:link,
 infobar.question > revealer > box *:link,
 infobar.question:backdrop > revealer > box *:link {
-  color: white;
+  color: #e1e2e7;
 }
 
 infobar.action:hover > revealer > box,
@@ -4776,7 +4776,7 @@ infobar.warning:hover > revealer > box {
 infobar.error > revealer > box,
 infobar.error:backdrop > revealer > box {
   background-color: #d93025;
-  color: white;
+  color: #e1e2e7;
 }
 
 infobar.error > revealer > box button,
@@ -4791,12 +4791,12 @@ infobar.error:backdrop > revealer > box button:focus,
 infobar.error:backdrop > revealer > box button:active,
 infobar.error:backdrop > revealer > box button:checked,
 infobar.error:backdrop > revealer > box button.text-button:not(:disabled) {
-  color: white;
+  color: #e1e2e7;
 }
 
 infobar.error > revealer > box *:link,
 infobar.error:backdrop > revealer > box *:link {
-  color: white;
+  color: #e1e2e7;
 }
 
 infobar.error:hover > revealer > box {
@@ -4813,7 +4813,7 @@ tooltip {
 
 tooltip.background {
   background-color: rgba(52, 52, 52, 0.9);
-  color: white;
+  color: #e1e2e7;
   box-shadow: 0 2px 2.4px -1px rgba(0, 0, 0, 0.2),
     0 4px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 6px 0 rgba(0, 0, 0, 0.12);
   border-radius: 3px;
@@ -4872,7 +4872,7 @@ colorswatch:last-child:not(.bottom) overlay {
 }
 
 colorswatch.dark {
-  color: white;
+  color: #e1e2e7;
 }
 
 colorswatch.light {
@@ -5041,7 +5041,7 @@ entry > text > selection,
 calendar > grid > label.today:selected,
 stacksidebar row:selected,
 .navigation-sidebar > row:selected {
-  color: white;
+  color: #e1e2e7;
   background-color: #3b4261;
 }
 
@@ -5132,7 +5132,7 @@ stackswitcher.linked:not(.vertical)
 stackswitcher.linked:not(.vertical)
   > button:not(.suggested-action):not(.destructive-action):checked {
   background-color: #3b4261;
-  color: white;
+  color: #e1e2e7;
 }
 
 stackswitcher button.text-button {
@@ -5387,7 +5387,7 @@ window.background.csd
 
 .polari-room-list .sidebar > row.activatable:selected {
   background-color: #3b4261;
-  color: white;
+  color: #e1e2e7;
 }
 
 .polari-room-list popover.background > arrow,
@@ -5471,7 +5471,7 @@ avatar.color14 {
 }
 
 avatar.contrasted {
-  color: white;
+  color: #e1e2e7;
 }
 
 avatar.image {
@@ -5566,7 +5566,7 @@ toast {
     0 12px 10.2px 2px rgba(0, 0, 0, 0.14), 0 5px 13.2px 4px rgba(0, 0, 0, 0.12),
     inset 0 1px rgba(225, 226, 231, 0.1);
   background-color: #1f2335;
-  color: white;
+  color: #e1e2e7;
   border: none;
 }
 

@@ -3582,6 +3582,7 @@ StScrollBar StButton#hhandle:active {
 #dashtodockContainer .app-well-app:focus .overview-icon,
 #dashtodockContainer .app-well-app:selected .overview-icon {
   background-color: rgba(192, 202, 245, 0.12);
+  border-radius: 15px;
 }
 
 #dashtodockContainer .show-apps:active .overview-icon,
@@ -3589,6 +3590,7 @@ StScrollBar StButton#hhandle:active {
 #dashtodockContainer .app-well-app:active .overview-icon,
 #dashtodockContainer .app-well-app:checked .overview-icon {
   background-color: rgba(192, 202, 245, 0.3);
+  border-radius: 15px;
 }
 
 #dashtodockContainer:overview #dash .show-apps .overview-icon,
@@ -3748,4 +3750,3 @@ StScrollBar StButton#hhandle:active {
 .popup-sub-menu .openweather-build-icon {
   color: rgba(0, 0, 0, 0.87);
 }
-

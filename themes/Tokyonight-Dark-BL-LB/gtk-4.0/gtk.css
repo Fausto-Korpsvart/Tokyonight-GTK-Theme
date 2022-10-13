@@ -5000,53 +5000,18 @@ windowcontrols button:not(.suggested-action):not(.destructive-action) {
   border-radius: 9999px;
 }
 
-windowcontrols
-  button:not(.suggested-action):not(.destructive-action).minimize
-  image,
-windowcontrols
-  button:not(.suggested-action):not(.destructive-action).maximize
-  image,
-windowcontrols
-  button:not(.suggested-action):not(.destructive-action).close
-  image {
-  background-color: transparent;
-  padding: 0;
+windowcontrols button:not(.suggested-action):not(.destructive-action) image {
+  background: none;
 }
 
 windowcontrols
-  button:not(.suggested-action):not(.destructive-action).minimize:hover,
-windowcontrols
-  button:not(.suggested-action):not(.destructive-action).maximize:hover,
-windowcontrols
-  button:not(.suggested-action):not(.destructive-action).minimize:backdrop:hover,
-windowcontrols
-  button:not(.suggested-action):not(.destructive-action).maximize:backdrop:hover {
-  background-color: #2b2c36;
-}
-
-windowcontrols
-  button:not(.suggested-action):not(.destructive-action).minimize:active,
-windowcontrols
-  button:not(.suggested-action):not(.destructive-action).maximize:active,
-windowcontrols
-  button:not(.suggested-action):not(.destructive-action).minimize:backdrop:active,
-windowcontrols
-  button:not(.suggested-action):not(.destructive-action).maximize:backdrop:active {
-  background-color: #43444c;
-}
-
-windowcontrols
-  button.close:not(.suggested-action):not(.destructive-action):hover,
-windowcontrols
-  button:not(.suggested-action):not(.destructive-action).close:backdrop:hover {
+  button.close:not(.suggested-action):not(.destructive-action):hover {
   background-color: #0db9d7;
   color: #1a1b26;
 }
 
 windowcontrols
-  button.close:not(.suggested-action):not(.destructive-action):active,
-windowcontrols
-  button:not(.suggested-action):not(.destructive-action).close:backdrop:active {
+  button.close:not(.suggested-action):not(.destructive-action):active {
   background-color: #9d7cd8;
   color: #1a1b26;
 }

@@ -2344,7 +2344,7 @@ StEntry StLabel.hint-text,
 #panel .panel-button:checked:hover {
   background-color: transparent;
   color: #2ac3de;
-  box-shadow: inset 0 0 0 1000px #292e42;
+  box-shadow: inset 0 0 0 1000px #3b4261;
 }
 
 #panel .panel-button:active .panel-button,
@@ -2353,7 +2353,7 @@ StEntry StLabel.hint-text,
 #panel .panel-button:checked .panel-button {
   background-color: transparent;
   color: rgba(0, 0, 0, 0.87);
-  box-shadow: inset 0 0 0 1000px #292e42;
+  box-shadow: inset 0 0 0 1000px #3b4261;
 }
 
 
@@ -2399,7 +2399,7 @@ StEntry StLabel.hint-text,
 #panel .panel-button.clock-display:overview .clock,
 #panel .panel-button.clock-display:focus .clock,
 #panel .panel-button.clock-display:checked .clock {
-  box-shadow: inset 0 0 0 1000px #292e42;
+  box-shadow: inset 0 0 0 1000px #3b4261;
   color: #2ac3de;
 }
 
@@ -3750,4 +3750,3 @@ StScrollBar StButton#hhandle:active {
 .popup-sub-menu .openweather-build-icon {
   color: rgba(0, 0, 0, 0.87);
 }
-

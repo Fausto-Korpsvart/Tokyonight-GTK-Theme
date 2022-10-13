@@ -19,7 +19,7 @@
 /* text foreground color of insensitive widgets */
 @define-color insensitive_fg_color rgba(0, 0, 0, 0.38);
 /* insensitive text widgets and the like base background color */
-@define-color insensitive_base_color #fafafa;
+@define-color insensitive_base_color #d4d6e4;
 /* widget text/foreground color on backdrop windows */
 @define-color theme_unfocused_fg_color rgba(0, 0, 0, 0.87);
 /* text color for entries, views and content in general on backdrop windows */
@@ -157,7 +157,7 @@ textview text {
 }
 
 textview border {
-  background-color: #fafafa;
+  background-color: #d4d6e4;
   color: rgba(0, 0, 0, 0.6);
 }
 
@@ -5571,7 +5571,7 @@ toast {
   box-shadow: 0 7px 4.8px -4px rgba(0, 0, 0, 0.2),
     0 12px 10.2px 2px rgba(0, 0, 0, 0.14), 0 5px 13.2px 4px rgba(0, 0, 0, 0.12),
     inset 0 1px rgba(225, 226, 231, 0.1);
-  background-color: #212121;
+  background-color: #1f2335;
   color: #e1e2e7;
   border: none;
 }

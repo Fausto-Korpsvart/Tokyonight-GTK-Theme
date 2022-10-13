@@ -2645,7 +2645,7 @@ StEntry StLabel.hint-text,
 .popup-menu .popup-menu-item:focus,
 .popup-menu .popup-menu-item:hover,
 .popup-menu .popup-menu-item.selected {
-  color: #c0caf5 !important;
+  color: #2ac3de !important;
   background-color: rgba(192, 202, 245, 0.12) !important;
   transition-duration: 0;
 }
@@ -3587,6 +3587,7 @@ StScrollBar StButton#hhandle:active {
 #dashtodockContainer .app-well-app:focus .overview-icon,
 #dashtodockContainer .app-well-app:selected .overview-icon {
   background-color: rgba(192, 202, 245, 0.12);
+  border-radius: 15px;
 }
 
 #dashtodockContainer .show-apps:active .overview-icon,
@@ -3594,6 +3595,7 @@ StScrollBar StButton#hhandle:active {
 #dashtodockContainer .app-well-app:active .overview-icon,
 #dashtodockContainer .app-well-app:checked .overview-icon {
   background-color: rgba(192, 202, 245, 0.3);
+  border-radius: 15px;
 }
 
 #dashtodockContainer:overview #dash .show-apps .overview-icon,

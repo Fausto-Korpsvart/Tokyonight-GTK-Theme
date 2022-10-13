@@ -4982,74 +4982,34 @@ windowcontrols {
 
 windowcontrols.start:not(.empty):dir(ltr),
 windowcontrols.end:not(.empty):dir(rtl) {
-  margin-left: 12px;
+  margin-left: 6px;
   margin-right: 3px;
 }
 
 windowcontrols.start:not(.empty):dir(rtl),
 windowcontrols.end:not(.empty):dir(ltr) {
-  margin-left: 12px;
+  margin-left: 6px;
   margin-right: 3px;
 }
 
 windowcontrols button:not(.suggested-action):not(.destructive-action) {
-  min-height: 12px;
-  min-width: 12px;
+  min-height: 24px;
+  min-width: 24px;
   padding: 0;
   margin: 0 2px;
   border-radius: 9999px;
 }
 
-windowcontrols button.minimize image,
-windowcontrols button.maximize image,
-windowcontrols button.close image {
-  padding: 0;
-  color: transparent;
+windowcontrols
+  button:not(.suggested-action):not(.destructive-action).close:hover {
+  background-color: #0db9d7;
+  color: #1a1b26;
 }
 
-button.titlebutton.close,
-button.titlebutton.close:hover:backdrop,
-windowcontrols > button.close,
-windowcontrols > button.close:hover:backdrop {
-  background-color: #f7768e;
-}
-
-button.titlebutton.close:hover,
-windowcontrols > button.close:hover {
-  background-color: shade(#f7768e, 0.5);
-}
-
-button.titlebutton.maximize,
-button.titlebutton.maximize:hover:backdrop,
-windowcontrols > button.maximize,
-windowcontrols > button.maximize:hover:backdrop {
-  background-color: #9ece6a;
-}
-
-button.titlebutton.maximize:hover,
-windowcontrols > button.maximize:hover {
-  background-color: shade(#9ece6a, 0.5);
-}
-
-button.titlebutton.minimize,
-button.titlebutton.minimize:hover:backdrop,
-windowcontrols > button.minimize,
-windowcontrols > button.minimize:hover:backdrop {
-  background-color: #ff9e64;
-}
-
-button.titlebutton.minimize:hover,
-windowcontrols > button.minimize:hover {
-  background-color: shade(#ff9e64, 0.5);
-}
-
-button.titlebutton.close:backdrop,
-button.titlebutton.maximize:backdrop,
-button.titlebutton.minimize:backdrop,
-windowcontrols > button.close:backdrop,
-windowcontrols > button.maximize:backdrop,
-windowcontrols > button.minimize:backdrop {
-  background-color: #545c7e;
+windowcontrols
+  button:not(.suggested-action):not(.destructive-action).close:active {
+  background-color: #9d7cd8;
+  color: #1a1b26;
 }
 
 gridview > child:selected,

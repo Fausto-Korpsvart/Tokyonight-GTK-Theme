@@ -9,7 +9,7 @@
 /* widget base background color */
 @define-color theme_bg_color #222436;
 /* text widgets and the like base background color */
-@define-color theme_base_color #222436;
+@define-color theme_base_color #2f334d;
 /* base background color of selections */
 @define-color theme_selected_bg_color #a9b1d6;
 /* text/foreground color of selections */

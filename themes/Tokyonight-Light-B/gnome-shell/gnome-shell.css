@@ -3580,6 +3580,7 @@ StScrollBar StButton#hhandle:active {
 #dashtodockContainer .app-well-app:focus .overview-icon,
 #dashtodockContainer .app-well-app:selected .overview-icon {
   background-color: rgba(65, 72, 104, 0.45);
+  border-radius: 15px;
 }
 
 #dashtodockContainer .show-apps:active .overview-icon,
@@ -3587,6 +3588,7 @@ StScrollBar StButton#hhandle:active {
 #dashtodockContainer .app-well-app:active .overview-icon,
 #dashtodockContainer .app-well-app:checked .overview-icon {
   background-color: #343b58;
+  border-radius: 15px;
 }
 
 #dashtodockContainer:overview #dash .show-apps .overview-icon,
