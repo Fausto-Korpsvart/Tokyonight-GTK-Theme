@@ -38,7 +38,7 @@ I have abbreviated the themes because I don't like to put such long names like: 
 | Theme-Name-BL-GS  |Theme `Borderless` decoration for `Gnome Shell`                |
 
 
-## Looking for other themes with Neovim colour schemes?
+## More themes based on Neovim colour schemes.
 | Neovim Colorschemes for GTK | Source | Package |
 | ------ | ------ | ------ |
 | Catppuccin GTK Theme          | [Github](https://github.com/Fausto-Korpsvart/Catppuccin-GTK-Theme)  | [Pling](https://www.pling.com/p/1715554/) |
@@ -49,5 +49,10 @@ I have abbreviated the themes because I don't like to put such long names like: 
 | Material Palenight GTK Theme  | [Github](https://github.com/Fausto-Korpsvart/Material-GTK-Themes)   | [Pling](https://www.pling.com/p/1706139/) |
 | Rosé Pine GTK Theme           | [Github](https://github.com/Fausto-Korpsvart/Rose-Pine-GTK-Theme)   | [Pling](https://www.pling.com/p/1810530/) |
 | Tokyonight GTK Theme          | [Github](https://github.com/Fausto-Korpsvart/Tokyo-Night-GTK-Theme) | [Pling](https://www.pling.com/p/1681315/) |
+
+## If you want to support
+You can buy me a coffee, a beer and donate to support the development of these themes.
+- [Donate in PayPal.Me](https://www.paypal.me/korpsvart)
+- [PayPal Donation Page](https://www.paypal.com/donate/?hosted_button_id=LHKL2JYTUURVA)
 
 #### **<ENJOY IT!! :nerd_face:/>**
