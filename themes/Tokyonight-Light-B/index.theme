@@ -1,12 +1,12 @@
 [Desktop Entry]
 Type=X-GNOME-Metatheme
-Name=Tokyonight-Light-Border
+Name=Tokyonight-Light
 Comment=An elegant GTK theme with the 'Tokyonight Light' colour palette, and based on '@Vinceliuice's Graphite' GTK theme.
 Encoding=UTF-8
 
 [X-GNOME-Metatheme]
-GtkTheme=Tokyonight-Light-Border
-MetacityTheme=Tokyonight-Light-Border
+GtkTheme=Tokyonight-Light
+MetacityTheme=Tokyonight-Light
 IconTheme=Tokyonight-Light
 CursorTheme=Tokyonight-Light
 ButtonLayout=close,minimize,maximize:menu

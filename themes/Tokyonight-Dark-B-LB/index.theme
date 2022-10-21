@@ -1,12 +1,12 @@
 [Desktop Entry]
 Type=X-GNOME-Metatheme
-Name=Tokyonight-Dark-Border-Legacy-Buttons
+Name=Tokyonight-Dark
 Comment=An elegant GTK theme with the 'Tokyonight Dark' colour palette, and based on '@Vinceliuice's Graphite' GTK theme.
 Encoding=UTF-8
 
 [X-GNOME-Metatheme]
-GtkTheme=Tokyonight-Dark-Border-Legacy-Buttons
-MetacityTheme=Tokyonight-Dark-Border-Legacy-Buttons
+GtkTheme=Tokyonight-Dark
+MetacityTheme=Tokyonight-Dark
 IconTheme=Tokyonight-Dark
 CursorTheme=Tokyonight-Dark
 ButtonLayout=close,minimize,maximize:menu

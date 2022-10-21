@@ -259,7 +259,7 @@ window#gnome-system-monitor.background.csd
 .background.csd filechooser stack.view scrolledwindow treeview.view:selected,
 filechooser stack.view scrolledwindow .background.csd treeview.view:selected {
   color: #a9b1d6;
-  background-color: rgba(115, 122, 162, 0.2);
+  background-color: rgba(169, 177, 214, 0.2);
 }
 
 .nemo-window .nemo-window-pane widget.entry:selected,
@@ -39459,7 +39459,7 @@ filechooser
   treeview.view:not(.progressbar):not(.trough)
   .rubberband {
   border: 1px solid #a9b1d6;
-  background-color: rgba(115, 122, 162, 0.3);
+  background-color: rgba(169, 177, 214, 0.3);
 }
 
 flowbox flowboxchild {
@@ -40839,8 +40839,8 @@ button.suggested-action:disabled {
 
 button.suggested-action:hover {
   box-shadow: inset 0 0 0 9999px transparent,
-    0 2px 2.4px -1px rgba(115, 122, 162, 0.2),
-    0 4px 3px 0 rgba(115, 122, 162, 0.14), 0 1px 6px 0 rgba(115, 122, 162, 0.12);
+    0 2px 2.4px -1px rgba(169, 177, 214, 0.2),
+    0 4px 3px 0 rgba(169, 177, 214, 0.14), 0 1px 6px 0 rgba(169, 177, 214, 0.12);
 }
 
 button.suggested-action:checked {
@@ -40849,13 +40849,13 @@ button.suggested-action:checked {
 
 button.suggested-action:checked:hover {
   box-shadow: inset 0 0 0 9999px transparent,
-    0 3px 3px -3px rgba(115, 122, 162, 0.3),
-    0 2px 3px -1px rgba(115, 122, 162, 0.24),
-    0 2px 5px 0 rgba(115, 122, 162, 0.12);
+    0 3px 3px -3px rgba(169, 177, 214, 0.3),
+    0 2px 3px -1px rgba(169, 177, 214, 0.24),
+    0 2px 5px 0 rgba(169, 177, 214, 0.12);
 }
 
 button.suggested-action:focus {
-  box-shadow: 0 0 0 2px rgba(115, 122, 162, 0.35);
+  box-shadow: 0 0 0 2px rgba(169, 177, 214, 0.35);
 }
 
 button.suggested-action.flat {
@@ -40870,7 +40870,7 @@ button.suggested-action.flat:disabled {
 }
 
 button.suggested-action.flat:checked {
-  background-color: rgba(115, 122, 162, 0.3);
+  background-color: rgba(169, 177, 214, 0.3);
 }
 
 button.destructive-action {
@@ -41610,7 +41610,7 @@ headerbar
 
 .titlebar.default-decoration {
   min-height: 24px;
-  padding: 6px;
+  padding: 10px 20px;
   box-shadow: inset 0 1px rgba(200, 211, 245, 0.1);
   border-radius: 12px 12px 0 0;
 }
@@ -41641,7 +41641,7 @@ headerbar
 
 headerbar {
   min-height: 48px;
-  padding: 0 6px;
+  padding: 1px 20px;
 }
 
 headerbar:not(.titlebar) {
@@ -41653,16 +41653,13 @@ box.vertical headerbar {
 }
 
 .nautilus-window headerbar > box.horizontal.left {
-  padding: 0 10px;
+  padding: 0 12px;
   padding-right: 60px;
 }
 
-headerbar > box.horizontal.left {
-  padding: 0 15px;
-}
-
-headerbar > box.right{
-  padding: 0 3px;
+headerbar > box.left,
+headerbar > box.right {
+  padding: 0;
 }
 
 headerbar entry,
@@ -44088,7 +44085,7 @@ overshoot.top {
     0,
     center top,
     0.75,
-    to(rgba(115, 122, 162, 0.24)),
+    to(rgba(169, 177, 214, 0.24)),
     to(transparent)
   );
   background-repeat: no-repeat;
@@ -44105,7 +44102,7 @@ overshoot.bottom {
     0,
     center bottom,
     0.75,
-    to(rgba(115, 122, 162, 0.24)),
+    to(rgba(169, 177, 214, 0.24)),
     to(transparent)
   );
   background-repeat: no-repeat;
@@ -44122,7 +44119,7 @@ overshoot.left {
     0,
     left center,
     0.75,
-    to(rgba(115, 122, 162, 0.24)),
+    to(rgba(169, 177, 214, 0.24)),
     to(transparent)
   );
   background-repeat: no-repeat;
@@ -44139,7 +44136,7 @@ overshoot.right {
     0,
     right center,
     0.75,
-    to(rgba(115, 122, 162, 0.24)),
+    to(rgba(169, 177, 214, 0.24)),
     to(transparent)
   );
   background-repeat: no-repeat;
@@ -47870,7 +47867,7 @@ ideeditorutilities > dzldockpaned > box > stackswitcher button {
 ideeditorutilities > dzldockpaned > box > stackswitcher button:active {
   background-image: radial-gradient(
     circle,
-    rgba(115, 122, 162, 0.7) 10%,
+    rgba(169, 177, 214, 0.7) 10%,
     transparent 0%
   );
 }

@@ -1,12 +1,12 @@
 [Desktop Entry]
 Type=X-GNOME-Metatheme
-Name=Tokyonight-Dark-Border
-Comment=An elegant GTK theme with the 'Tokyonight Dark' colour palette, and based on '@Vinceliuice's Graphite' GTK theme.
+Name=Tokyonight-Moon
+Comment=An elegant GTK theme with the 'Tokyonight Moon' colour palette, and based on '@Vinceliuice's Graphite' GTK theme.
 Encoding=UTF-8
 
 [X-GNOME-Metatheme]
-GtkTheme=Tokyonight-Dark-Border
-MetacityTheme=Tokyonight-Dark-Border
-IconTheme=Tokyonight-Dark
-CursorTheme=Tokyonight-Dark
+GtkTheme=Tokyonight-Moon
+MetacityTheme=Tokyonight-Moon
+IconTheme=Tokyonight-Moon
+CursorTheme=Tokyonight-Moon
 ButtonLayout=close,minimize,maximize:menu
