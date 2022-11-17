@@ -1,12 +1,12 @@
 [Desktop Entry]
 Type=X-GNOME-Metatheme
-Name=Tokyonight-Storm
-Comment=An elegant GTK theme with the 'Tokyonight Storm' colour palette, and based on '@Vinceliuice's Graphite' GTK theme.
+Name=Tokyonight-Dark
+Comment=An Flat Gtk+ theme based on Elegant Design
 Encoding=UTF-8
 
 [X-GNOME-Metatheme]
-GtkTheme=Tokyonight-Storm
-MetacityTheme=Tokyonight-Storm
-IconTheme=Tokyonight-Storm
-CursorTheme=Tokyonight-Storm
+GtkTheme=Tokyonight-Dark
+MetacityTheme=Tokyonight-Dark
+IconTheme=Tokyonight-Dark
+CursorTheme=Tokyonight-cursors
 ButtonLayout=close,minimize,maximize:menu

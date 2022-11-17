@@ -332,6 +332,7 @@ StScrollBar StButton#hhandle:active {
   background-color: rgba(225, 226, 231, 0.95);
   border-radius: 12px;
   margin: 6px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.35);
   border: 2px solid #3b4261;
 }
 
@@ -675,7 +676,7 @@ StScrollBar StButton#hhandle:active {
 }
 
 .expo-background {
-  background-color: #8990b3;
+  background-color: #394b70;
 }
 
 .workspace-thumbnails {
@@ -762,7 +763,7 @@ StScrollBar StButton#hhandle:active {
 
 .about-uuid {
   font-size: 10px;
-  color: #888;
+  color: #737aa2;
 }
 
 .about-icon {
@@ -773,7 +774,7 @@ StScrollBar StButton#hhandle:active {
 .about-scrollBox {
   border: 1px solid rgba(0, 0, 0, 0.12);
   border-radius: 6px;
-  background-color: #ffffff;
+  background-color: #e1e2e7;
   padding: 4px;
   padding-right: 0;
   border-radius: 0;
@@ -792,7 +793,7 @@ StScrollBar StButton#hhandle:active {
 .about-version {
   padding-left: 7px;
   font-size: 10px;
-  color: #888;
+  color: #737aa2;
 }
 
 .calendar {
@@ -1102,7 +1103,7 @@ StScrollBar StButton#hhandle:active {
 
 .modal-dialog {
   color: #e1e2e7;
-  background-color: rgba(45, 45, 45, 0.95);
+  background-color: rgba(39, 45, 67, 0.95);
   border: 1px solid rgba(0, 0, 0, 0.65);
   padding: 0 5px 6px 5px;
   border-radius: 6px;
@@ -1675,7 +1676,7 @@ StScrollBar StButton#hhandle:active {
     rgba(225, 226, 231, 0.7) 0%,
     rgba(225, 226, 231, 0.7) 100%
   );
-  border-color: #dddddd;
+  border-color: #d5d6db;
   background-color: rgba(225, 226, 231, 0.2);
 }
 
@@ -1722,7 +1723,7 @@ StScrollBar StButton#hhandle:active {
   padding: 12px;
   spacing: 6px;
   border: none;
-  background-color: #ffffff;
+  background-color: #e1e2e7;
   border-radius: 6px;
   color: rgba(0, 0, 0, 0.87);
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.35), 0 3px 12px rgba(0, 0, 0, 0.16);
@@ -1817,7 +1818,7 @@ StScrollBar StButton#hhandle:active {
   color: rgba(225, 226, 231, 0.7);
   background-gradient-direction: none;
   background-color: rgba(225, 226, 231, 0.2);
-  border-color: #dddddd;
+  border-color: #d5d6db;
 }
 
 .grouped-window-list-item-box:focus:hover {
@@ -2029,7 +2030,7 @@ StScrollBar StButton#hhandle:active {
 }
 
 .workspace-button:hover {
-  color: #4d4d4d;
+  color: #414868;
 }
 
 /* Controls the style when using the "Visual representation" option */
@@ -2050,14 +2051,14 @@ StScrollBar StButton#hhandle:active {
 }
 
 .workspace-graph .workspace .windows {
-  -active-window-background: rgba(71, 71, 71, 0.75);
+  -active-window-background: rgba(86, 95, 137, 0.75);
   -active-window-border: rgba(0, 0, 0, 0.8);
-  -inactive-window-background: rgba(71, 71, 71, 0.75);
+  -inactive-window-background: rgba(86, 95, 137, 0.75);
   -inactive-window-border: rgba(0, 0, 0, 0.8);
 }
 
 .workspace-graph .workspace:active .windows {
-  -active-window-background: rgba(84, 84, 84, 0.75);
+  -active-window-background: rgba(115, 122, 162, 0.75);
   -active-window-border: rgba(0, 0, 0, 0.8);
   -inactive-window-background: rgba(46, 46, 46, 0.75);
   -inactive-window-border: rgba(0, 0, 0, 0.8);
@@ -2135,7 +2136,7 @@ StScrollBar StButton#hhandle:active {
 .applet-box:checked,
 .applet-box:checked:hover {
   color: rgba(0, 0, 0, 0.87);
-  background-color: #dddddd;
+  background-color: #d5d6db;
 }
 
 .applet-box:highlight {
