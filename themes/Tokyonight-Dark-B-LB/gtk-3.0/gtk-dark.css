@@ -5999,9 +5999,15 @@ decoration:backdrop {
 }
 
 .ssd decoration {
-  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.16), 0 0 0 2px #a9b1d6;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.16),
+    0 0 0 2px #0db9d7;
   border: none;
   border-radius: 12px 12px 0 0;
+}
+
+.ssd decoration:backdrop {
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.16),
+    0 0 0 2px #545c7e;
 }
 
 .csd.popup decoration {

@@ -53,7 +53,12 @@ I have abbreviated the themes because I don't like to put such long names like: 
 | Rosé Pine GTK Theme           | [Github](https://github.com/Fausto-Korpsvart/Rose-Pine-GTK-Theme)   | [Pling](https://www.pling.com/p/1810530/) |
 | Tokyonight GTK Theme          | [Github](https://github.com/Fausto-Korpsvart/Tokyo-Night-GTK-Theme) | [Pling](https://www.pling.com/p/1681315/) |
 
+### Special thanks.
+
+Thanks to [@f1yn](https://github.com/f1yn) for the solution to the active and inactive borders in the new version of `Cinnamon` which no longer uses `Metacity`.
+
 ## If you want to support
+
 You can donate to support the development of these themes.
 - [Donate in PayPal.Me](https://www.paypal.me/korpsvart)
 - [PayPal Donation Page](https://www.paypal.com/donate/?hosted_button_id=LHKL2JYTUURVA)

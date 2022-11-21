@@ -5750,6 +5750,15 @@ windowcontrols
   background-color: #f7768e;
 }
 
+button.titlebutton.close:backdrop,
+button.titlebutton.maximize:backdrop,
+button.titlebutton.minimize:backdrop,
+windowcontrols > button.close:backdrop,
+windowcontrols > button.maximize:backdrop,
+windowcontrols > button.minimize:backdrop {
+  background-color: #565f89;
+}
+
 gridview > child:selected,
 row:selected,
 calendar:selected {

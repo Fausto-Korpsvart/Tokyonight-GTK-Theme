@@ -201,7 +201,7 @@ treeview.view:selected:not(.progressbar):not(.trough),
 modelbutton.flat:selected,
 .menuitem.button.flat:selected {
   color: rgba(0, 0, 0, 0.87);
-  background-color: rgba(235, 235, 235, 0.987);
+  background-color: rgba(212, 214, 228, 0.987);
 }
 
 .nemo-window .view selection,
@@ -3615,7 +3615,7 @@ menu menuitem label:dir(ltr),
 menu .view:selected,
 .menu .view:selected,
 .context-menu .view:selected {
-  background-color: rgba(235, 235, 235, 0.987);
+  background-color: rgba(212, 214, 228, 0.987);
 }
 
 menu > arrow,
@@ -5992,9 +5992,15 @@ decoration:backdrop {
 }
 
 .ssd decoration {
-  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.16), 0 0 0 2px #3b4261;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.16),
+    0 0 0 2px #0db9d7;
   border: none;
   border-radius: 12px 12px 0 0;
+}
+
+.ssd decoration:backdrop {
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.16),
+    0 0 0 2px #545c7e;
 }
 
 .csd.popup decoration {
@@ -9655,7 +9661,7 @@ tooltip.background.chromium {
   > widget
   > radiobutton
   > radio:not(:checked):not(:indeterminate) {
-  color: #757575;
+  color: #737aa2;
 }
 
 #MozillaGtkWidget
@@ -9674,7 +9680,7 @@ tooltip.background.chromium {
   > widget
   > radiobutton
   > radio:not(:checked):not(:indeterminate):active {
-  color: #9e9e9e;
+  color: #a9b1d6;
 }
 
 #MozillaGtkWidget
@@ -9685,7 +9691,7 @@ tooltip.background.chromium {
   > widget
   > radiobutton
   > radio:not(:checked):not(:indeterminate):disabled {
-  color: rgba(117, 117, 117, 0.5);
+  color: rgba(115, 122, 162, 0.5);
 }
 
 #MozillaGtkWidget menu {

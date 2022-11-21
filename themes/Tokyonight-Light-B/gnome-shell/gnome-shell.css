@@ -1486,7 +1486,7 @@ StEntry StLabel.hint-text,
 .login-dialog .user-icon.user-avatar,
 .unlock-dialog .user-icon,
 .unlock-dialog .user-icon.user-avatar {
-  border: 2px solid #e0e0e0;
+  border: 2px solid #e9e9ed;
 }
 
 .login-dialog-logo-bin {
@@ -3815,7 +3815,7 @@ StScrollBar StButton#hhandle:active {
   padding-bottom: 12px;
   margin-bottom: 4em;
   spacing: 12px;
-  border: 2px solid #e0e0e0;
+  border: 2px solid #e9e9ed;
 }
 
 .screenshot-ui-close-button {

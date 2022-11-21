@@ -2900,12 +2900,12 @@ popover.background > contents {
   background-clip: border-box;
   border-radius: 12px;
   color: #c0caf5;
-  border: 2px solid #a9b1d6;
+  border: 2px solid #6183bb;
 }
 
 popover.background:backdrop > arrow,
 popover.background:backdrop > contents {
-  border: 2px solid #a9b1d6;
+  border: 2px solid #6183bb;
 }
 
 popover.background separator {
@@ -2927,8 +2927,8 @@ popover.background modelbutton {
 
 popover.background modelbutton:hover {
   transition: none;
-  background-color: #a9b1d6;
-  color: rgba(0, 0, 0, 0.87);
+  background-color: #3b4261;
+  color: #0db9d7;
 }
 
 popover.background modelbutton:disabled {
