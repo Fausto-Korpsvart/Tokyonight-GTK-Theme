@@ -3005,7 +3005,8 @@ StEntry StLabel.hint-text,
   icon-size: 24px;
   border-radius: 6px;
   padding: 9px;
-  background-color: rgba(192, 202, 245, 0.12) !important;
+  background-color: #0db9d7 !important;
+  color: rgba(0, 0, 0, 0.87);
 }
 
 .quick-toggle-menu .header .icon.active {
@@ -3024,6 +3025,13 @@ StEntry StLabel.hint-text,
   border: 1px solid rgba(192, 202, 245, 0.2);
 }
 
+.quick-settings-system-item .icon-button:hover {
+  background-color: rgba(234, 232, 255, 0.12);
+  color: #b4f9f8;
+  border-radius: 6px;
+  border: 1px solid rgba(234, 232, 255, 0.2);
+}
+
 .quick-settings-system-item .icon-button > StIcon {
   -st-icon-style: symbolic;
   icon-size: 16px !important;
@@ -3033,6 +3041,12 @@ StEntry StLabel.hint-text,
   min-height: 0;
   min-width: 0;
   color: #0db9d7;
+}
+
+.quick-settings-system-item .power-item:hover {
+  min-height: 0;
+  min-width: 0;
+  color: #b4f9f8;
 }
 
 .quick-settings-system-item .power-item:insensitive {

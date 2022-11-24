@@ -2868,11 +2868,11 @@ StEntry StLabel.hint-text,
 
 .quick-toggle:checked {
   background-color: #343b58 !important;
-  color: #7dcfff;
+  color: #0db9d7;
 }
 
 .quick-toggle:checked:hover {
-  background-color: #565f89 !important;
+  background-color: #394b70 !important;
   color: #7dcfff;
 }
 
@@ -3018,8 +3018,8 @@ StEntry StLabel.hint-text,
 }
 
 .quick-toggle-menu .header .icon.active {
-  background-color: #e1e2e7 !important;
-  color: #3b4261;
+  background-color: rgba(0, 0, 0, 0.12) !important;
+  color: #1a1b26;
 }
 
 .quick-settings-system-item > StBoxLayout {
@@ -3038,11 +3038,24 @@ StEntry StLabel.hint-text,
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+.quick-settings-system-item .icon-button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #394b70;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
 .quick-settings-system-item .power-item {
   min-height: 0;
   min-width: 0;
   background-color: rgba(225, 226, 231, 0.12);
   color: #1a1b26;
+}
+
+.quick-settings-system-item .power-item:hover {
+  min-height: 0;
+  min-width: 0;
+  color: #394b70;
 }
 
 .quick-settings-system-item .power-item:insensitive {
@@ -4392,3 +4405,4 @@ StScrollBar StButton#hhandle:active {
 .popup-sub-menu .openweather-build-icon {
   color: #e1e2e7;
 }
+
