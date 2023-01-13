@@ -9,7 +9,7 @@
 
 > A GTK theme based on the colours of [Folke's](https://github.com/folke) great theme: [Tokyonight for Neovim](https://github.com/folke/tokyonight.nvim), the [VinceLiuice's](https://github.com/vinceliuice) awesome: [Graphite GTK theme](https://github.com/vinceliuice/Graphite-gtk-theme) and the creativity of [Gusbemacbe's](https://github.com/gusbemacbe): [Suru Plus Icon Theme](https://github.com/gusbemacbe/suru-plus).<br />
 > Great to combine in your Gnome Desktop Environment and TWMs like: XmonadWM, AwesomeWM, BSPWM, etc...
-> With support also for the desktop environments Cinamon and XFCE.<br />
+> With support also for the desktop environments Cinnamon and XFCE.<br />
 > You can check **Reddit:** [r/unixporn](https://www.reddit.com/r/unixporn/) to get some ideas.
 
 ![Tokyo Night](https://raw.githubusercontent.com/Fausto-Korpsvart/Tokyo-Night-GTK-Theme/master/screenshots/Tokyonight.png)
@@ -54,27 +54,27 @@ The themes work on versions 40 to 43 of the GNOME D.E. just follow the steps bel
 Some people have told me that they find the names a bit complicated and confusing because of the abbreviations I have put next to the name of each theme.
 I have abbreviated the themes because I don't like to put such long names like: **`Material-Deep-Ocean-Borderless-Legacy-Buttons-Gnome-43`**, Admittedly, it is a very explicit name, but it is a ridiculously long name. so I decided to abbreviate the different versions for each theme, like **`Tokyonight-Dark-BL-LB-G42`**, so to clarify the abbreviations here is a small table.
 
-| Abbreviation example | Explanation of abbreviations |
-| ------ | ------------ |
-| Theme-Name-B      |Theme with `Border` decoration                                 |
-| Theme-Name-B-LB   |Theme with `Border` decoration and `Legacy Buttons` in Windows |
-| Theme-Name-B-GS   |Theme with `Border` decoration for `Gnome Shell`               |
-| Theme-Name-BL     |Theme `Borderless` decoration                                  |
-| Theme-Name-BL-LB  |Theme `Borderless` decoration and `Legacy Buttons` in Windows  |
-| Theme-Name-BL-GS  |Theme `Borderless` decoration for `Gnome Shell`                |
+| Abbreviation example | Explanation of abbreviations                                 |
+| -------------------- | ------------------------------------------------------------ |
+| Theme-Name-B         | Theme with `Border` decoration                               |
+| Theme-Name-B-LB      | Theme with `Border` decoration and `Legacy Buttons` in Windows |
+| Theme-Name-B-GS      | Theme with `Border` decoration for `Gnome Shell`             |
+| Theme-Name-BL        | Theme `Borderless` decoration                                |
+| Theme-Name-BL-LB     | Theme `Borderless` decoration and `Legacy Buttons` in Windows |
+| Theme-Name-BL-GS     | Theme `Borderless` decoration for `Gnome Shell`              |
 
 ## Looking for other themes with Neovim colour schemes?
 
-| Neovim Colorschemes for GTK | Source | Package |
-| ------ | ------ | ------ |
-| Catppuccin GTK Theme          | [Github](https://github.com/Fausto-Korpsvart/Catppuccin-GTK-Theme)  | [Pling](https://www.pling.com/p/1715554/) |
-| Everforest GTK Theme          | [Github](https://github.com/Fausto-Korpsvart/Everforest-GTK-Theme)  | [Pling](https://www.pling.com/p/1695467/) |
-| Gruvbox Material GTK Theme    | [Github](https://github.com/Fausto-Korpsvart/Gruvbox-GTK-Theme)     | [Pling](https://www.pling.com/p/1681313/) |
-| Kanagawa GTK Theme            | [Github](https://github.com/Fausto-Korpsvart/Kanagawa-GKT-Theme)    | [Pling](https://www.pling.com/p/1810560/) |
-| Material Deep Ocean GTK Theme | [Github](https://github.com/Fausto-Korpsvart/Material-GTK-Themes)   | [Pling](https://www.pling.com/p/1706139/) |
-| Material Palenight GTK Theme  | [Github](https://github.com/Fausto-Korpsvart/Material-GTK-Themes)   | [Pling](https://www.pling.com/p/1706139/) |
-| Nightfox Dusk GTK Theme       | [Github](https://github.com/Fausto-Korpsvart/Nightfox-GTK-Theme)    | [Pling](https://www.pling.com/p/1929101/) |
-| Rosé Pine GTK Theme           | [Github](https://github.com/Fausto-Korpsvart/Rose-Pine-GTK-Theme)   | [Pling](https://www.pling.com/p/1810530/) |
+| Neovim Colorschemes for GTK   | Source                                                       | Package                                   |
+| ----------------------------- | ------------------------------------------------------------ | ----------------------------------------- |
+| Catppuccin GTK Theme          | [Github](https://github.com/Fausto-Korpsvart/Catppuccin-GTK-Theme) | [Pling](https://www.pling.com/p/1715554/) |
+| Everforest GTK Theme          | [Github](https://github.com/Fausto-Korpsvart/Everforest-GTK-Theme) | [Pling](https://www.pling.com/p/1695467/) |
+| Gruvbox Material GTK Theme    | [Github](https://github.com/Fausto-Korpsvart/Gruvbox-GTK-Theme) | [Pling](https://www.pling.com/p/1681313/) |
+| Kanagawa GTK Theme            | [Github](https://github.com/Fausto-Korpsvart/Kanagawa-GKT-Theme) | [Pling](https://www.pling.com/p/1810560/) |
+| Material Deep Ocean GTK Theme | [Github](https://github.com/Fausto-Korpsvart/Material-GTK-Themes) | [Pling](https://www.pling.com/p/1706139/) |
+| Material Palenight GTK Theme  | [Github](https://github.com/Fausto-Korpsvart/Material-GTK-Themes) | [Pling](https://www.pling.com/p/1706139/) |
+| Nightfox Dusk GTK Theme       | [Github](https://github.com/Fausto-Korpsvart/Nightfox-GTK-Theme) | [Pling](https://www.pling.com/p/1929101/) |
+| Rosé Pine GTK Theme           | [Github](https://github.com/Fausto-Korpsvart/Rose-Pine-GTK-Theme) | [Pling](https://www.pling.com/p/1810530/) |
 | Tokyonight GTK Theme          | [Github](https://github.com/Fausto-Korpsvart/Tokyo-Night-GTK-Theme) | [Pling](https://www.pling.com/p/1681315/) |
 
 ### Special thanks.
@@ -85,7 +85,7 @@ Thanks to [@telometto](https://github.com/telometto) for the alternative for the
 
 ## Donate
 
-If you would like to support the project financially, you can do this through 
+If you would like to support the project financially, you can do this through
 [![](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge\&logo=paypal\&logoColor=white)](https://paypal.me/korpsvart) 
 
 ## **\<ENJOY IT!! :nerd\_face:/>**
