@@ -13,7 +13,7 @@
 > With support also for the desktop environments Cinnamon and XFCE.<br />
 > You can check **Reddit:** [r/unixporn](https://www.reddit.com/r/unixporn/) to get some ideas.
 
-![Tokyo Night](https://raw.githubusercontent.com/Fausto-Korpsvart/Tokyo-Night-GTK-Theme/master/screenshots/Tokyonight.png)
+![Tokyo Night](https://raw.githubusercontent.com/Fausto-Korpsvart/Tokyo-Night-GTK-Theme/master/extra/screenshots/Tokyonight.png)
 ## Installing Themes
 
 Before installing, make sure to install the `Murrine Engine` and `gnome-themes-extra` packages for the correct rendering of themes.
