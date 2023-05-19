@@ -5600,17 +5600,19 @@ window {
 
 window.csd {
   border-radius: 12px;
-  outline: none;
-  box-shadow: 0 2px 2.4px -1px rgba(0, 0, 0, 0.2),
-    0 4px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 6px 0 rgba(0, 0, 0, 0.12),
-    0 0 0 2px #27a1b9, 0 0 0 50px transparent;
+  transition: none;
+  margin: 0;
+  padding: 0;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2), 0 10px 18px rgba(0, 0, 0, 0.14),
+    0 8px 24px rgba(0, 0, 0, 0.12), 0 0 0 2px #27a1b9, 0 1px 2px transparent,
+    0 3px 4px transparent, 0 1px 6px transparent;
 }
 
 window.csd:backdrop {
-  transition: box-shadow 75ms cubic-bezier(0, 0, 0.2, 1);
-  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.3),
-    0 1px 2px -1px rgba(0, 0, 0, 0.24), 0 1px 2px -0.6px rgba(0, 0, 0, 0.17),
-    0 0 0 2px #414868, 0 0 0 50px transparent;
+  transition: none;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), 0 3px 4px rgba(0, 0, 0, 0.14),
+    0 1px 6px rgba(0, 0, 0, 0.12), 0 0 0 2px #414868, 0 3px 8px transparent,
+    0 10px 18px transparent, 0 8px 24px transparent;
 }
 
 window.csd.maximized,
