@@ -3306,6 +3306,7 @@ StScrollBar StButton#hhandle:active {
 .switcher-list {
   background-color: rgba(41, 46, 66, 0.95);
   box-shadow: inset 0 0 0 1px rgba(192, 202, 245, 0.1);
+  color: #c0caf5;
 }
 
 .switcher-list .item-box {
