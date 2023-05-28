@@ -39,9 +39,9 @@
 /* widgets main borders color on backdrop windows */
 @define-color unfocused_borders rgba(192, 202, 245, 0.12);
 /* these are pretty self explicative */
-@define-color warning_color #FDD633;
-@define-color error_color #F28B82;
-@define-color success_color #81C995;
+@define-color warning_color #e0af68;
+@define-color error_color #f7768e;
+@define-color success_color #9ece6a;
 /* these colors are exported for the window manager and shouldn't be used in applications,
 read if you used those and something break with a version upgrade you're on your own... */
 @define-color wm_title #c0caf5;
@@ -60,7 +60,7 @@ read if you used those and something break with a version upgrade you're on your
 @define-color budgie_tasklist_indicator_color #c0caf5;
 @define-color budgie_tasklist_indicator_color_active #c0caf5;
 @define-color budgie_tasklist_indicator_color_active_window #999999;
-@define-color budgie_tasklist_indicator_color_attention #FDD633;
+@define-color budgie_tasklist_indicator_color_attention #e0af68;
 @define-color STRAWBERRY_100 #FF9262;
 @define-color STRAWBERRY_300 #FF793E;
 @define-color STRAWBERRY_500 #F15D22;
@@ -117,18 +117,18 @@ read if you used those and something break with a version upgrade you're on your
 @define-color accent_bg_color #a9b1d6;
 @define-color accent_fg_color rgba(0, 0, 0, 0.87);
 @define-color accent_color #a9b1d6;
-@define-color destructive_bg_color #F28B82;
+@define-color destructive_bg_color #f7768e;
 @define-color destructive_fg_color rgba(0, 0, 0, 0.87);
-@define-color destructive_color #F28B82;
-@define-color success_bg_color #81C995;
+@define-color destructive_color #f7768e;
+@define-color success_bg_color #9ece6a;
 @define-color success_fg_color rgba(0, 0, 0, 0.87);
-@define-color success_color #81C995;
-@define-color warning_bg_color #FDD633;
+@define-color success_color #9ece6a;
+@define-color warning_bg_color #e0af68;
 @define-color warning_fg_color rgba(0, 0, 0, 0.87);
-@define-color warning_color #FDD633;
-@define-color error_bg_color #F28B82;
+@define-color warning_color #e0af68;
+@define-color error_bg_color #f7768e;
 @define-color error_fg_color rgba(0, 0, 0, 0.87);
-@define-color error_color #F28B82;
+@define-color error_color #f7768e;
 @define-color window_bg_color #1a1b26;
 @define-color window_fg_color #c0caf5;
 @define-color view_bg_color #1a1b26;
@@ -5617,7 +5617,7 @@ window.csd {
   transition: none;
   margin: 0;
   padding: 0;
-  outline: 1px solid rgba(41, 46, 66, 1);
+  outline: 1px solid rgba(192, 202, 245, 0.2);
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2), 0 10px 18px rgba(0, 0, 0, 0.14),
     0 8px 24px rgba(0, 0, 0, 0.12), 0 1px 2px transparent, 0 3px 4px transparent,
     0 1px 6px transparent;

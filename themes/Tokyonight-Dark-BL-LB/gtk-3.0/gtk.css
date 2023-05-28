@@ -6041,7 +6041,7 @@ decoration:backdrop {
 }
 
 .csd decoration {
-  border: 1px solid rgba(41, 46, 66, 1);
+  border: 1px solid rgba(192, 202, 245, 0.2);
   background-color: #1a1b26;
   background-clip: border-box;
   padding: 2.5px;
