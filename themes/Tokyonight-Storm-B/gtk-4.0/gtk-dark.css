@@ -5969,7 +5969,8 @@ popover.entry-completion > contents {
   padding: 0;
 }
 
-.nautilus-window {
+.nautilus-window,
+.nautilus-window list {
   background-color: #24283b;
 }
 
