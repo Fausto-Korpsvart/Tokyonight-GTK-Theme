@@ -1,0 +1,77 @@
+// Tokyonight Default Theme Color Palette
+
+// Red
+$red-light: #f52a65;
+$red-dark: #f7768e;
+
+// Pink
+$pink-light: #d20065;
+$pink-dark: #ff007c;
+
+// Purple
+$purple-light: #7847bd;
+$purple-dark: #bb9af7;
+
+// Blue
+$blue-light: #2e7de9;
+$blue-dark: #7aa2f7;
+
+// Teal
+$teal-light: #118c74;
+$teal-dark: #1abc9c;
+
+// Cyan
+$cyan-light: #007197;
+$cyan-dark: #7dcfff;
+
+// Green
+$green-light: #387068;
+$green-dark: #73daca;
+
+// Yellow
+$yellow-light: #8c6c3e;
+$yellow-dark: #e0af68;
+
+// Orange
+$orange-light: #b15c00;
+$orange-dark: #ff9e64;
+
+// Accent Color
+$accent-light: #006a83;
+$accent-dark: #27a1b9;
+
+// Grey
+$grey-050: #e9e9ed;
+$grey-100: #e1e2e7;
+$grey-150: #d2d2da;
+$grey-200: #c7c7d1;
+$grey-250: #bcbcc8;
+$grey-300: #b6b8cd;
+$grey-350: #aaacc5;
+$grey-400: #a9b1d6;
+$grey-450: #848cb5;
+$grey-500: #737aa2;
+$grey-550: #545c7e;
+$grey-600: #414868;
+$grey-650: #3b4261;
+$grey-700: #323449;
+$grey-750: #292e42;
+$grey-800: #1f2231;
+$grey-850: #1a1b26;
+$grey-900: #15161e;
+$grey-950: #111118;
+
+// White
+$white: #e9e9ed;
+
+// Black
+$black: #1a1b26;
+
+// Theme
+$default-light: $accent-light;
+$default-dark: $accent-dark;
+
+// Button
+$button-close: if($topbar == 'light', #c64343, #f7768e);
+$button-max: if($topbar == 'light', #587539, #9ece6a);
+$button-min: if($topbar == 'light', #8c6c3e, #ff9e64);
