@@ -1,7 +1,6 @@
 .quick-settings {
     padding: $base_padding * 3 !important;
-    // border-radius: $base_radius + $base_padding * 3 !important;
-    border-radius: $modal-radius;
+    border-radius: $base_radius + $base_padding * 3 !important;
     margin-top: $base_padding !important;
 
     .icon-button,
@@ -41,16 +40,16 @@
 
     &:checked {
         background-color: $primary !important;
-        color: if($variant == 'light', $white, $black);
+        color: on($primary);
 
         &:hover {
-            background-color: mix($text, $primary, 40%) !important;
-            color: if($variant == 'light', $white, $black);
+            background-color: mix($text, $primary, 6%) !important;
+            color: on($primary);
         }
 
         &:active {
-            background-color: mix($text, $primary, 20%) !important;
-            color: if($variant == 'light', $white, $black);
+            background-color: mix($text, $primary, 15%) !important;
+            color: on($primary);
         }
     }
 
@@ -129,16 +128,16 @@
 
         &:checked {
             background-color: $primary !important;
-            color: if($variant == 'light', $white, $black);
+            color: on($primary);
 
             &:hover {
-                background-color: mix($text, $primary, 40%) !important;
-                color: if($variant == 'light', $white, $black);
+                background-color: mix($text, $primary, 6%) !important;
+                color: on($primary);
             }
 
             &:active {
-                background-color: mix($text, $primary, 20%) !important;
-                color: if($variant == 'light', $white, $black);
+                background-color: mix($text, $primary, 15%) !important;
+                color: on($primary);
             }
         }
 
@@ -197,8 +196,7 @@
         &:focus,
         &:hover,
         &.selected {
-            // color: $text !important;
-            color: $primary !important;
+            color: $text !important;
             background-color: rgba($text, 0.1) !important;
         }
 

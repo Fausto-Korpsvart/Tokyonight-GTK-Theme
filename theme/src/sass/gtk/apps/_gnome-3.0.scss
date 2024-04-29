@@ -593,13 +593,13 @@ frame.gedit-map-frame > border {
     > row {
         padding: 0;
         margin: -1px;
-        color: if($variant == 'light', $black, $white);
+        color: $text;
         border-radius: $corner-radius - $space-size;
 
         &:hover,
         &:active,
         &:focus {
-            color: if($variant == 'light', $black, $white);
+            color: $text;
         }
 
         &:selected {

@@ -3,7 +3,7 @@
 $key_size: 1.2em;
 $keyboard_bg_color: if($variant == 'light', #d8dade, #1d1d1d);
 $key_border_radius: $base_radius + 3px;
-$key_bg_color: if($variant == 'light', $white, #707070);
+$key_bg_color: if($variant == 'light', white, #707070);
 $default_key_bg_color: if($variant == 'light', #adb3bc, #4b4b4b);
 
 // draw keys using button function

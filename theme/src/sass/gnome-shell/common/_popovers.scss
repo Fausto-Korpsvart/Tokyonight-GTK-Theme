@@ -18,8 +18,7 @@
     color: $text-secondary !important;
     padding: 0;
     font-weight: normal;
-    border-radius: $menu_radius;
-    // box-shadow: 0 3px 8px -5px rgba(black, 0.12);
+    border-radius: $modal_radius;
     box-shadow: none;
     margin: $base_padding $base_padding 8px;
     @include fontsize($font_size - 1);
@@ -27,7 +26,7 @@
     .popup-menu-content {
         padding: $base_padding;
         // background-color: $popover;
-        background-color: if($variant == 'light', $white, $black);
+        background-color: if($variant == 'light', rgba($white, 0.9), $black);
         border-radius: $menu_radius;
         margin: 0;
         box-shadow: 0 3px 8px -5px rgba(black, 0.12);
@@ -78,14 +77,14 @@
         &:focus,
         &:hover,
         &.selected {
-            color: $primary !important;
+            color: $text !important;
             background-color: $divider !important;
             transition-duration: 0;
         }
 
         &:active,
         &.selected:active {
-            color: $primary !important;
+            color: $text !important;
             background-color: $track !important;
         }
 

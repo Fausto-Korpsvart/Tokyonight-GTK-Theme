@@ -6,7 +6,7 @@
     box-shadow: 0 3px 6px rgba(black, 0.35);
 
     @if $outline == 'true' {
-        border: 2px solid $primary;
+        border: 2px solid $indicator;
     }
 }
 

@@ -18,7 +18,7 @@
 
     &:focus {
         @if $theme == 'grey' {
-            @include entry(focus, $bc: $base, $fc: $white);
+            @include entry(focus, $bc: $base, $fc: white);
         } @else {
             @include entry(focus, $bc: $base);
         }
@@ -26,7 +26,7 @@
 
     .search-entry-icon {
         icon-size: 16px;
-        padding: 0 0;
+        padding: 0;
         color: $text-secondary-disabled;
     }
 

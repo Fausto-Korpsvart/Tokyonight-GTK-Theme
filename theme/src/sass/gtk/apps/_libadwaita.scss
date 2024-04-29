@@ -12,34 +12,20 @@ avatar {
     // need to update the NUMBER_OF_COLORS in src/adw-avatar.c.
     // The 2D list has this form: ((font-color, gradient-top-color, gradient-bottom-color)).
     $avatarcolorlist: (
-        // blue
-        (#cfe1f5, #83b6ec, #337fdc),
-        // cyan
-        (#caeaf2, #7ad9f1, #0f9ac8),
-        // green
-        (#cef8d8, #8de6b1, #29ae74),
-        // lime
-        (#e6f9d7, #b5e98a, #6ab85b),
-        // yellow
-        (#f9f4e1, #f8e359, #d29d09),
-        // gold
-        (#ffead1, #ffcb62, #d68400),
-        // orange
-        (#ffe5c5, #ffa95a, #ed5b00),
-        // raspberry
-        (#f8d2ce, #f78773, #e62d42),
-        // magenta
-        (#fac7de, #e973ab, #e33b6a),
-        // purple
-        (#e7c2e8, #cb78d4, #9945b5),
-        // violet
-        (#d5d2f5, #9e91e8, #7a59ca),
-        // beige
-        (#f2eade, #e3cf9c, #b08952),
-        // brown
-        (#e5d6ca, #be916d, #785336),
-        // gray
-        (#d8d7d3, #c0bfbc, #6e6d71)
+        (#cfe1f5, #83b6ec, #337fdc), // blue
+        (#caeaf2, #7ad9f1, #0f9ac8), // cyan
+        (#cef8d8, #8de6b1, #29ae74), // green
+        (#e6f9d7, #b5e98a, #6ab85b), // lime
+        (#f9f4e1, #f8e359, #d29d09), // yellow
+        (#ffead1, #ffcb62, #d68400), // gold
+        (#ffe5c5, #ffa95a, #ed5b00), // orange
+        (#f8d2ce, #f78773, #e62d42), // raspberry
+        (#fac7de, #e973ab, #e33b6a), // magenta
+        (#e7c2e8, #cb78d4, #9945b5), // purple
+        (#d5d2f5, #9e91e8, #7a59ca), // violet
+        (#f2eade, #e3cf9c, #b08952), // beige
+        (#e5d6ca, #be916d, #785336), // brown
+        (#d8d7d3, #c0bfbc, #6e6d71)  // gray
     );
 
     @for $i from 1 through length($avatarcolorlist) {
@@ -54,7 +40,7 @@ avatar {
     }
 
     &.contrasted {
-        color: white;
+        color: $white;
     }
 
     &.image {
@@ -259,7 +245,7 @@ indicatorbin {
             font-size: 0.6rem;
             font-weight: bold;
             padding: 1px 4px;
-            color: white;
+            color: $white;
         }
     }
 
@@ -494,7 +480,7 @@ overlay-split-view {
         &:hover,
         &:active,
         &:focus {
-            color: if($variant == 'light', $black, $white);
+            color: $text;
         }
 
         &:selected {
@@ -506,7 +492,7 @@ overlay-split-view {
             &:hover,
             &:focus {
                 background-color: rgba($base, 0.9);
-                color: if($variant == 'light', $black, $white);
+                color: $text;
             }
         }
     }
@@ -786,5 +772,147 @@ overlay-split-view {
 
     .collapse-spacing {
         padding: 0;
+    }
+}
+
+// ThemeSelector
+themeselector, // Gnome text editor
+panelthemeselector {
+    // Gnome builder
+    margin: $space-size * 1.5;
+
+    checkbutton {
+        padding: 0;
+        min-height: 44px;
+        min-width: 44px;
+        padding: 1px;
+        background-clip: content-box;
+        border-radius: $circular-radius;
+        box-shadow: inset 0 0 0 1px $border;
+
+        &.follow:checked,
+        &.light:checked,
+        &.dark:checked {
+            box-shadow: inset 0 0 0 2px $primary;
+        }
+
+        &.follow {
+            background-image: linear-gradient(
+                to bottom right,
+                #e9e9ed 50%,
+                #292e42 50%
+            );
+        }
+
+        &.light {
+            background-color: #e9e9ed;
+        }
+
+        &.dark {
+            background-color: #292e42;
+        }
+
+        &.theme-selector radio {
+            -gtk-icon-source: none;
+            border: none;
+            background: none;
+            box-shadow: none;
+            min-height: 20px;
+            min-width: 20px;
+            padding: 0;
+
+            &:hover,
+            &:active,
+            &:checked {
+                background-color: transparent;
+            }
+
+            &:checked {
+                -gtk-icon-size: 20px;
+                -gtk-icon-source: -gtk-scaled(
+                    - gtk-recolor(url('assets/checkbox-checked-symbolic.svg')),
+                    - gtk-recolor(url('assets/checkbox-checked-symbolic@2.svg'))
+                );
+                color: on($primary);
+                background-color: $primary;
+
+                &,
+                &:hover,
+                &:active {
+                    box-shadow:
+                        0 2px 3px -1px rgba(black, 0.08),
+                        0 1px 2px 0 rgba(black, 0.1);
+                }
+            }
+        }
+    }
+}
+
+themeswitcher {
+    // Gnome console
+    padding: $space-size;
+
+    .check {
+        min-height: 20px;
+        min-width: 20px;
+        background: none;
+        padding: 0;
+        margin: 0;
+        border-radius: $circular-radius;
+        color: on($primary);
+        background-color: $primary;
+
+        &,
+        &:hover,
+        &:active {
+            box-shadow:
+                0 2px 3px -1px rgba(black, 0.08),
+                0 1px 2px 0 rgba(black, 0.1);
+        }
+    }
+
+    checkbutton {
+        padding: 0;
+        min-height: 44px;
+        min-width: 44px;
+        padding: 1px;
+        background-clip: content-box;
+        border-radius: $circular-radius;
+        box-shadow: inset 0 0 0 1px $border;
+
+        &:checked {
+            box-shadow: inset 0 0 0 2px $primary;
+        }
+
+        radio {
+            &,
+            &:hover,
+            &:active,
+            &:checked,
+            &:checked:hover,
+            &:checked:active {
+                background-color: transparent;
+                border: none;
+                background: none;
+                box-shadow: none;
+                color: transparent;
+                -gtk-icon-source: none;
+                -gtk-icon-size: 0;
+            }
+        }
+
+        &.system {
+            background: linear-gradient(-45deg, #1a1b26 50%, $white 50%);
+        }
+
+        &.light {
+            color: gtkalpha(black, 0.8);
+            background-color: $white;
+        }
+
+        &.dark {
+            color: $white;
+            background-color: #1a1b26;
+        }
     }
 }

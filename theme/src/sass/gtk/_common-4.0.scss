@@ -5825,7 +5825,7 @@ window {
     min-height: 16px;
     min-width: 16px;
     padding: 0;
-    margin: 0 $space-size - 2px;
+    margin: 0 $space-size - 4px;
 
     &.minimize,
     &.maximize,
@@ -5847,7 +5847,7 @@ window {
 
         &:hover,
         &:active {
-            color: if($colorscheme != 'dracula', white, rgba(black, 0.5));
+            color: if($colorscheme != 'moon', white, rgba(black, 0.5));
         }
 
         &:backdrop {
@@ -5865,7 +5865,7 @@ window {
         background-color: $titlebutton-min;
 
         &:active {
-            background-color: mix($titlebar-text, $titlebutton-min, 25%);
+            background-color: shade($titlebutton-min, 0.6);
         }
     }
 
@@ -5874,7 +5874,7 @@ window {
         background-color: $titlebutton-max;
 
         &:active {
-            background-color: mix($titlebar-text, $titlebutton-max, 25%);
+            background-color: shade($titlebutton-max, 0.6);
         }
     }
 
@@ -5883,7 +5883,7 @@ window {
         background-color: $titlebutton-close;
 
         &:active {
-            background-color: mix($titlebar-text, $titlebutton-close, 25%);
+            background-color: shade($titlebutton-close, 0.6);
         }
     }
 }
@@ -5892,7 +5892,7 @@ window {
     min-height: 22px;
     min-width: 22px;
     padding: 0;
-    margin: 0 $space-size - 2px;
+    margin: 0 $space-size - 4px;
 
     &.minimize,
     &.maximize,

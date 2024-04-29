@@ -94,7 +94,16 @@
 
     #dash .dash-background {
         // default-mode
-        background-color: $panel;
+        // background-color: $panel;
+        background-color: if(
+            $variant == 'light',
+            rgba($white, 0.45),
+            rgba($black, 0.85)
+        );
+
+        @if $float == 'true' {
+            border: 2px solid $primary;
+        }
     }
 
     .app-well-app-running-dot {
@@ -169,7 +178,9 @@
 
     &:overview #dash .dash-background {
         // overview-mode #1
+        // background-color: rgba($primary, 0.3);
         background-color: on(black, divider);
+        border: 2px solid transparent;
     }
 
     &.opaque:overview,
@@ -217,6 +228,8 @@
 }
 
 #dashtodockPreviewSeparator.popup-separator-menu-item-horizontal {
+    // background-color: if($variant == 'light', $black, rgba($white, 0.25));
+    background-color: red !important;
     width: 1px;
     height: auto;
     border-right-width: 1px;

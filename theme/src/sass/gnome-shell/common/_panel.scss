@@ -2,20 +2,24 @@
 // a.k.a. the panel
 
 #panel {
-    font-weight: bold;
     color: $panel-text-secondary;
+    font-weight: bold;
     font-feature-settings: 'tnum';
+    @include fontsize($font_size);
     transition-duration: 250ms;
     box-shadow: none;
     border: none;
-    @include fontsize($font_size - 1);
+    height: $item_size + 3px;
+    background-color: if(
+        $variant == 'light',
+        rgba($white, 0.45),
+        rgba($black, 0.85)
+    );
 
     @if $float == 'true' {
-        background-color: transparent;
-        height: $item_size + $base_margin * 2;
-    } @else {
-        background-color: $panel;
-        height: $item_size + 2px;
+        margin: 5px 10px 1px;
+        border: 2px solid $primary;
+        border-radius: $circular_radius;
     }
 
     // the rounded outset corners
@@ -33,14 +37,15 @@
         -natural-hpadding: 12px;
         -minimum-hpadding: 12px;
         font-weight: bold;
-        color: if($topbar == 'light', $black, $white);
+        color: $text;
         transition-duration: 150ms;
-        border-radius: $circular_radius;
+        border-radius: $base_radius;
         text-shadow: none;
+        box-shadow: none;
 
         @if $float == 'true' {
             border: $base_margin solid transparent;
-            box-shadow: inset 0 0 0 1000px $panel;
+            border-radius: $circular_radius;
         } @else {
             border: $base_padding / 2 solid transparent;
         }
@@ -50,11 +55,11 @@
 
             .clock {
                 transition-duration: 150ms;
-                border-radius: $circular_radius;
+                border-radius: $base_radius;
 
                 @if $float == 'true' {
                     border: $base_margin solid transparent;
-                    box-shadow: inset 0 0 0 1000px $panel;
+                    border-radius: $circular_radius;
                 }
             }
         }
@@ -62,7 +67,12 @@
         &:hover {
             color: $primary;
             background-color: transparent;
-            box-shadow: inset 0 0 0 1000px mix($panel-text, $panel, 25%);
+            box-shadow: inset 0 0 0 1000px mix($panel-text, $panel, 6%);
+
+            @if $float == 'true' {
+                border: $base_margin solid transparent;
+                border-radius: $circular_radius;
+            }
 
             &.clock-display {
                 box-shadow: none;
@@ -70,7 +80,12 @@
 
                 .clock {
                     color: $primary;
-                    box-shadow: inset 0 0 0 1000px mix($panel-text, $panel, 25%);
+                    box-shadow: inset 0 0 0 1000px mix($panel-text, $panel, 6%);
+
+                    @if $float == 'true' {
+                        border: $base_margin solid transparent;
+                        border-radius: $circular_radius;
+                    }
                 }
             }
         }
@@ -83,7 +98,7 @@
             &:hover {
                 color: $primary;
                 background-color: transparent;
-                box-shadow: inset 0 0 0 1000px mix($panel-text, $panel, 15%);
+                box-shadow: inset 0 0 0 1000px mix($panel-text, $panel, 12%);
             }
 
             &.clock-display {
@@ -92,7 +107,7 @@
 
                 .clock {
                     color: $primary;
-                    box-shadow: inset 0 0 0 1000px mix($panel-text, $panel, 15%);
+                    box-shadow: inset 0 0 0 1000px mix($panel-text, $panel, 12%);
                 }
             }
         }
@@ -120,21 +135,6 @@
         .appindicator-trayicons-box {
             margin: 0 $base_padding;
         }
-
-        // .panel-status-indicators-box .system-status-icon,
-        // .panel-status-menu-box .system-status-icon {
-        //   margin: 0;
-        // }
-
-        // .panel-status-indicators-box,
-        // .panel-status-menu-box {
-        //   spacing: $base_padding / 2;
-        // }
-
-        // // spacing between power icon and (optional) percentage label
-        // .power-status.panel-status-indicators-box {
-        //   spacing: 0;
-        // }
 
         // app menu icon
         .app-menu-icon {
@@ -166,6 +166,7 @@
     &.lock-screen {
         background-color: transparent;
         box-shadow: none;
+        border: 2px solid transparent;
 
         StLabel,
         StIcon {

@@ -86,9 +86,9 @@
 }
 
 @function highlight($color) {
-	@if (lightness($color) >= 80%) { @return rgba($white, 0.15); }
+	@if (lightness($color) >= 80%)      { @return rgba($white, 0.15); }
 	@else if (lightness($color) >= 40%) { @return rgba($white, 0.2); }
-	@else { @return rgba($white, 0.1); }
+	@else                               { @return rgba($white, 0.1); }
 }
 
 @function theme($color) {
@@ -152,23 +152,23 @@ $titlebar-indicator:                    if($variant == 'dark', currentColor, $pr
 $inverse-indicator:                     mix($primary, $white, 0%);
 $applet-primary:                        if($theme == 'grey' and variant == 'light' and $topbar == 'dark', $grey-200, $primary);
 
-$background:                            if($variant == 'light', mix($primary, background(a), 0%), mix($primary, background(f), 0%));
-$surface:                               if($variant == 'light', mix($primary, background(b), 0%), mix($primary, background(g), 0%));
-$base:                                  if($variant == 'light', mix($primary, background(c), 0%), mix($primary, background(h), 0%));
-$base-alt:                              if($variant == 'light', mix($primary, background(d), 0%), mix($primary, background(h), 0%));
-$card:                                  if($variant == 'light', mix($primary, background(b), 0%), mix($primary, background(h), 0%));
-$menu:                                  if($variant == 'light', mix($primary, background(b), 0%), mix($primary, background(e), 0%));
+$background:                            if($variant == 'light', background(a), background(f));
+$surface:                               if($variant == 'light', background(b), background(g));
+$base:                                  if($variant == 'light', background(c), background(h));
+$base-alt:                              if($variant == 'light', background(d), background(h));
+$card:                                  if($variant == 'light', background(b), background(h));
+$menu:                                  if($variant == 'light', background(b), background(e));
 
 $tooltip:                               if($variant == 'dark', rgba(darken(background(f), 3%), 0.9), rgba(darken(background(h), 3%), 0.9));
 $osd:                                   mix($primary, background(f), 0%);
 $scrim:                                 mix($primary, background(g), 0%);
 $scrim-alt:                             mix($primary, background(h), 0%);
 $scrim-inverse:                         rgba($white, 0.1);
-$titlebar:                              if($variant == 'light', mix($primary, background(a), 0%), mix($primary, background(f), 0%));
-$titlebar-backdrop:                     if($variant == 'light', mix($primary, background(a), 0%), mix($primary, background(f), 0%));
-$titlebar-indicator:                    if($topbar  == 'dark', 	mix($primary, background(b), 0%), mix($primary, background(e), 0%));
-$popover:                               if($variant == 'light', mix($primary, background(a), 0%), mix($primary, background(g), 0%));
-$panel-solid:                           if($topbar  == 'dark', 	mix($primary, background(f), 0%), mix($primary, background(d), 0%)); // for Unity panel which doesn't allow translucent colors
+$titlebar:                              if($variant == 'light', background(a), background(f));
+$titlebar-backdrop:                     if($variant == 'light', background(a), background(f));
+$titlebar-indicator:                    if($topbar  == 'dark', 	background(b), background(e));
+$popover:                               if($variant == 'light', background(a), background(g));
+$panel-solid:                           if($topbar  == 'dark', 	background(f), background(d)); // for Unity panel which doesn't allow translucent colors
 $panel:                                 rgba($panel-solid, $panel_opacity);
 
 $button:                                if($variant == 'dark', on($background, secondary-fill), on($background, fill));
@@ -203,28 +203,28 @@ $overlay-checked:                       gtkalpha(currentColor, 0.10);
 $overlay-selected:                      gtkalpha(currentColor, 0.06);
 
 // Text and derivative colors
-$text:                                  text($background);
-$text-secondary:                        text($background, secondary);
-$text-disabled:                         text($background, disabled);
-$text-secondary-disabled:               text($background, secondary-disabled);
+$text:                                  on($background);
+$text-secondary:                        on($background, secondary);
+$text-disabled:                         on($background, disabled);
+$text-secondary-disabled:               on($background, secondary-disabled);
 $track:                                 on($background, track);
 $track-disabled:                        on($background, track-disabled);
 $divider:                               on($background, divider);
 $fill:                                  on($background, fill);
 
-$titlebar-text:                         text($titlebar);
-$titlebar-text-secondary:               text($titlebar, secondary);
-$titlebar-text-disabled:                text($titlebar, disabled);
-$titlebar-text-secondary-disabled:      text($titlebar, secondary-disabled);
+$titlebar-text:                         on($titlebar);
+$titlebar-text-secondary:               on($titlebar, secondary);
+$titlebar-text-disabled:                on($titlebar, disabled);
+$titlebar-text-secondary-disabled:      on($titlebar, secondary-disabled);
 $titlebar-track:                        on($titlebar, track);
 $titlebar-track-disabled:               on($titlebar, track-disabled);
 $titlebar-divider:                      on($titlebar, divider);
 $titlebar-fill:                         on($titlebar, fill);
 
-$panel-text:                            text($panel);
-$panel-text-secondary:                  text($panel, secondary);
-$panel-text-disabled:                   text($panel, disabled);
-$panel-text-secondary-disabled:         text($panel, secondary-disabled);
+$panel-text:                            on($panel);
+$panel-text-secondary:                  on($panel, secondary);
+$panel-text-disabled:                   on($panel, disabled);
+$panel-text-secondary-disabled:         on($panel, secondary-disabled);
 $panel-track:                           on($panel, track);
 $panel-track-disabled:                  on($panel, track-disabled);
 $panel-divider:                         on($panel, divider);

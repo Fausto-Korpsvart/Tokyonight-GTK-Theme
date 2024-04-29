@@ -744,6 +744,25 @@ leaflet.unfolded .contacts-contact-list {
     }
 }
 
+.sidebar-pane toolbarview > stack > box > widget > widget {
+    > scrolledwindow {
+        @extend %sidebar_style;
+
+        .dim-label {
+            color: on($indicator, disabled);
+        }
+
+        > scrollbar {
+            @extend %sidebar_scrollbar;
+            @extend %round_scrollbar;
+        }
+
+        > .navigation-sidebar {
+            @extend %sidebar_list;
+        }
+    }
+}
+
 //
 // Gnome Software
 //
@@ -1641,6 +1660,19 @@ image.circular {
 //   margin: 0 36px;
 //   padding: 0;
 // }
+
+//
+// Gnome System Monitor
+//
+#gnome-system-monitor.background.csd {
+    background-color: $background;
+}
+
+#gnome-system-monitor treeview.view {
+    background-color: $base;
+    padding: 4px;
+    border-radius: $modal-radius;
+}
 
 //
 // Gnome Clocks

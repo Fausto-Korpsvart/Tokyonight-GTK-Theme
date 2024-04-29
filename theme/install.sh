@@ -29,18 +29,20 @@ SIZE_VARIANTS=('' '-Compact')
 if [[ "$(command -v gnome-shell)" ]]; then
 	gnome-shell --version
 	SHELL_VERSION="$(gnome-shell --version | cut -d ' ' -f 3 | cut -d . -f -1)"
-	if [[ "${SHELL_VERSION:-}" -ge "44" ]]; then
-		GS_VERSION="44-0"
+	if [[ "${SHELL_VERSION:-}" -ge "46" ]]; then
+	GS_VERSION="46-0"
+	elif [[ "${SHELL_VERSION:-}" -ge "44" ]]; then
+	GS_VERSION="44-0"
 	elif [[ "${SHELL_VERSION:-}" -ge "42" ]]; then
-		GS_VERSION="42-0"
+	GS_VERSION="42-0"
 	elif [[ "${SHELL_VERSION:-}" -ge "40" ]]; then
-		GS_VERSION="40-0"
+	GS_VERSION="40-0"
 	else
-		GS_VERSION="3-28"
+	GS_VERSION="3-28"
 	fi
 else
 	echo "'gnome-shell' not found, using styles for last gnome-shell version available."
-	GS_VERSION="44-0"
+	GS_VERSION="46-0"
 fi
 
 usage() {
@@ -65,10 +67,10 @@ OPTIONS:
 
   --tweaks                Specify versions for tweaks
                           1. [moon|storm]	Moon|Storm| ColorSchemes version
-                          2. black          Blackness color version
-                          3. float          Floating gnome-shell panel style
-                          4. outline        Windows with 2px outline style
-                          5. macos:			Macos style windows button
+                          2. black      	Blackness color version
+                          3. float      	Floating gnome-shell panel style
+                          4. outline    	Windows with 2px outline style
+                          5. macos:				Macos style windows button
 
   -h, --help              Show help
 EOF

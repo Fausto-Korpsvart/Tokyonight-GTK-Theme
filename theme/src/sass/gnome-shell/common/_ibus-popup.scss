@@ -11,11 +11,12 @@
 .candidate-popup-content {
     @extend %theme_dialogs;
     color: $text-secondary;
-    box-shadow: 0 3px 6px 0 rgba(black, 0.35);
+    box-shadow: 0 3px 6px 0 rgba(black, 0.15);
     border: none;
     margin: ($base_padding / 2) 8px;
     padding: $base_padding;
     spacing: $base_padding;
+    border-radius: $base_radius; // Reset
 }
 
 .candidate-index {
@@ -29,7 +30,7 @@
 .candidate-box {
     padding: 0.3em 0.5em 0.3em 0.5em;
     margin-right: 2px;
-    border-radius: $base_radius;
+    border-radius: $base_radius - $base_padding;
     color: $text-secondary;
     &:hover {
         background-color: $divider;
@@ -61,11 +62,12 @@
 .candidate-page-button {
     padding: 4px 8px;
     @extend %flat_button;
+    border-radius: $base_radius - $base_padding;
 }
 
 .candidate-page-button-previous,
 .candidate-page-button-next {
-    border-radius: $base_radius;
+    border-radius: $base_radius - $base_padding;
 }
 .candidate-page-button-icon {
     icon-size: 1em;

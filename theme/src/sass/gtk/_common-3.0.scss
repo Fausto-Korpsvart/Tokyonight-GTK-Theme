@@ -1821,8 +1821,8 @@ headerbar {
             button:not(.titlebutton):not(.suggested-action):not(
                     .destructive-action
                 ) {
-                border-radius: 0 0 $corner-radius $corner-radius;
-                margin: 0;
+                border-radius: $modal-radius;
+                margin: 6px 3px;
                 min-width: 120px;
                 padding: 0;
 
@@ -3534,12 +3534,12 @@ frame {
 }
 
 actionbar > revealer > box {
-    margin: $space-size;
+    margin: $space-size 0 0 0;
     padding: $space-size;
     border: none;
-    color: on($indicator);
-    background-color: $indicator;
-    border-radius: $corner-radius;
+    color: $text;
+    background-color: $background;
+    border-radius: 0 0 $corner-radius $corner-radius;
 
     button {
         border-radius: $corner-radius - $space-size;
@@ -3550,16 +3550,16 @@ actionbar > revealer > box {
 
         &.combo:only-child {
             border-radius: $corner-radius - $space-size;
-            color: on($indicator, secondary);
-            background-color: on($indicator, fill);
+            color: $text;
+            background-color: if($variant == 'light', rgba($base, 0.4), $fill);
 
             &:hover,
             &:active {
-                color: on($indicator);
+                color: $primary;
             }
 
             &:disabled {
-                color: on($indicator, secondary-disabled);
+                color: $primary;
             }
         }
     }
@@ -4003,7 +4003,7 @@ filechooser {
 
     #pathbarbox {
         border-bottom: 1px solid $divider;
-        background-color: $background;
+        background-color: $base;
 
         > stack > box > button {
             // The new folder button
@@ -4014,7 +4014,7 @@ filechooser {
 
     stack.view {
         background-color: transparent;
-        padding: 0;
+        padding: 4px;
 
         scrolledwindow {
             background-color: transparent;
@@ -4027,6 +4027,7 @@ filechooser {
 
         > placesview {
             background-color: transparent;
+            padding: 4px;
         }
 
         frame > border {
@@ -4161,10 +4162,8 @@ placessidebar.sidebar {
     }
 
     list {
-        padding: $space-size / 2 $space-size;
-        background-color: $indicator;
-        border-radius: $corner-radius;
-        color: on($indicator, secondary);
+        background-color: transparent;
+        color: $text;
 
         > separator {
             @extend %hide_separators;
@@ -4176,12 +4175,13 @@ placessidebar.sidebar {
         min-height: 32px;
         margin: 0; // Remove unwanted hard-coded vertical margins with -1px
         padding: 0;
+        color: $text;
         border-radius: $corner-radius - $space-size;
-        color: on($indicator, secondary);
 
         &:hover,
         &:active {
-            color: on($indicator);
+            background-color: if($variant == 'light', rgba($base, 0.4), $fill);
+            color: $primary;
         }
 
         // Using margins/padding directly in the SidebarRow
@@ -4191,9 +4191,9 @@ placessidebar.sidebar {
         }
 
         &:selected {
-            background-color: $base;
+            color: $primary;
+            background-color: if($variant == 'light', rgba($base, 0.4), $fill);
             font-weight: 500;
-            color: $text;
 
             // &, image.sidebar-icon, button.sidebar-button { color: $text; }
         }
@@ -4730,7 +4730,7 @@ decoration {
         } @else {
             box-shadow:
                 $shadow-z4,
-                0 0 0 2px $indicator;
+                0 0 0 2px $primary;
         }
     }
 
