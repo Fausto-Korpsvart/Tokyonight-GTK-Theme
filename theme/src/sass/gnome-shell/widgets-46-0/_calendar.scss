@@ -234,12 +234,12 @@
 
         &:selected {
             background-color: $primary;
-            color: on($primary) !important;
+            color: if($variant == 'light', $white, $black) !important;
 
             &:hover,
             &:focus {
                 background-color: lighten($primary, 8%);
-                color: on($primary) !important;
+                color: if($variant == 'light', $white, $black) !important;
             }
         }
     }

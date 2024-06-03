@@ -77,14 +77,14 @@
         &:focus,
         &:hover,
         &.selected {
-            color: $text !important;
+            color: $primary !important;
             background-color: $divider !important;
             transition-duration: 0;
         }
 
         &:active,
         &.selected:active {
-            color: $text !important;
+            color: $primary !important;
             background-color: $track !important;
         }
 

@@ -60,68 +60,8 @@
         }
 
         gridview.view {
-            margin: 6px;
-            padding: 6px;
-        }
-    }
-
-    tabbox {
-        &,
-        &:backdrop {
-            transition: none;
-            background-color: transparent;
-        }
-
-        > tabboxchild {
-            > tab {
-                padding: $space-size;
-                color: $titlebar-text-secondary;
-
-                &:hover {
-                    background-color: if(
-                        $variant == 'light',
-                        rgba($base, 0.4),
-                        $fill
-                    );
-                    color: $primary;
-                    border-radius: $modal-radius;
-                    box-shadow: none;
-                }
-
-                &:disabled {
-                    color: $titlebar-text-secondary-disabled;
-                }
-
-                &:checked,
-                &:selected {
-                    background-color: if(
-                        $variant == 'light',
-                        rgba($base, 0.4),
-                        $fill
-                    );
-                    color: $primary;
-                    font-weight: 700;
-                    border-radius: $modal-radius;
-                    box-shadow: none;
-
-                    &:disabled {
-                        color: $titlebar-text-disabled;
-                    }
-                }
-
-                button.tab-close-button {
-                    color: $titlebar-text-secondary;
-
-                    &:hover,
-                    &:active {
-                        color: $titlebar-text;
-                    }
-
-                    &:disabled {
-                        color: $titlebar-text-secondary-disabled;
-                    }
-                }
-            }
+            margin: 10px;
+            padding: 8px;
         }
     }
 

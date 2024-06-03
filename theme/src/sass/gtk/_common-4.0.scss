@@ -2777,7 +2777,7 @@ magnifier {
     border-radius: $modal-radius;
 
     &:hover:not(:checked):not(:selected) {
-        background-color: $base;
+        background-color: $fill;
         color: $primary;
         box-shadow: none;
     }
@@ -2800,7 +2800,7 @@ magnifier {
             background-size 0ms,
             background-image 0ms,
             background-color 0ms;
-        background-color: $base;
+        background-color: $fill;
         color: $primary;
         box-shadow: none;
 
@@ -2839,7 +2839,7 @@ notebook {
 
     > header {
         border: none;
-        background-color: $indicator;
+        background-color: $fill;
         // padding: $space-size / 2;
         margin: $space-size / 2;
         border-radius: $modal-radius + $space-size / 2;
