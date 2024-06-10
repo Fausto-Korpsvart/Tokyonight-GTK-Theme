@@ -1684,7 +1684,8 @@ button.combo:only-child {
  ************/
 .toolbar {
     padding: $space-size;
-    background-color: $background;
+    // background-color: $background;
+    background-color: if($variant == 'light', #d2d2da, #15161e);
     border-spacing: $space-size;
 
     button {
@@ -1993,6 +1994,7 @@ headerbar {
 
     > windowhandle > box {
         padding: 0 $space-size;
+        // box-shadow: inset 0 1px highlight($background);
 
         &,
         > box.start,
@@ -2693,7 +2695,7 @@ popover {
 
         &:hover {
             transition: none;
-            background-color: if($variant == 'light', $base, $fill);
+            background-color: $fill;
             color: $primary;
 
             accelerator {
@@ -5177,7 +5179,7 @@ separator.sidebar {
         }
 
         &:selected {
-            background-color: if($variant == 'light', rgba($base, 0.4), $fill);
+            background-color: $overlay-hover;
             label,
             image {
                 color: $primary;
@@ -5187,11 +5189,7 @@ separator.sidebar {
             box-shadow: none;
 
             &:hover {
-                background-color: if(
-                    $variant == 'dark',
-                    $titlebar-fill,
-                    rgba($grey-150, 0.65)
-                );
+                background-color: $overlay-hover;
             }
 
             &:focus-visible:focus-within {
@@ -5753,6 +5751,7 @@ window {
         transition: none;
 
         @if $outline == 'false' {
+            // box-shadow: none;
             box-shadow:
                 $shadow-z16,
                 inset 0 1px highlight($background),
@@ -5847,7 +5846,8 @@ window {
 
         &:hover,
         &:active {
-            color: if($colorscheme != 'moon', white, rgba(black, 0.5));
+            // color: if($colorscheme != 'moon', white, rgba(black, 0.5));
+            color: transparent;
         }
 
         &:backdrop {
@@ -5864,6 +5864,10 @@ window {
         // Window minimize button
         background-color: $titlebutton-min;
 
+        &:hover {
+            background-color: shade($titlebutton-min, 0.4);
+        }
+
         &:active {
             background-color: shade($titlebutton-min, 0.6);
         }
@@ -5873,6 +5877,10 @@ window {
         // Window maximize button
         background-color: $titlebutton-max;
 
+        &:hover {
+            background-color: shade($titlebutton-max, 0.4);
+        }
+
         &:active {
             background-color: shade($titlebutton-max, 0.6);
         }
@@ -5881,6 +5889,10 @@ window {
     &.close {
         // Window close button
         background-color: $titlebutton-close;
+
+        &:hover {
+            background-color: shade($titlebutton-close, 0.4);
+        }
 
         &:active {
             background-color: shade($titlebutton-close, 0.6);

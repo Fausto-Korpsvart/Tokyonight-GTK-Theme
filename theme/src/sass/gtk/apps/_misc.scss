@@ -104,7 +104,7 @@ window.background > box.vertical > scrolledwindow > widget toolbar {
  * Chromium *
  ************/
 window.background.chromium {
-    background-color: $surface;
+    background-color: $chromium-tabs;
 
     // FIXME: There is no way to change the color of the toolbar buttons
     // toolbar button { color: $text-secondary; }

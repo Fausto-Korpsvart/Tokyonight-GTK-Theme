@@ -1,13 +1,13 @@
 // Theme ColorScheme palette: night/moon/storm
-@import 'color-palette-storm';
+@import 'color-palette-default';
 
-$colorscheme: 'storm';
+$colorscheme: 'default';
 
 // transparent opacity
 $opacity: 'default';
 
 // Theme primary color
-$theme: 'teal';
+$theme: 'default';
 
 // Theme size
 $compact: 'false';
@@ -22,10 +22,10 @@ $panel_opacity: 0.6;
 $blackness: 'false';
 
 // Windows outline style
-$outline: 'true';
+$outline: 'false';
 
 // Windows button style : mac/normal
 $window_button: 'normal';
 
 // Gnome-Shell float panel version
-$float: 'true';
+$float: 'false';
