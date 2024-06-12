@@ -124,19 +124,19 @@ Run the following commands in the terminal:
 
 This is just to clarify doubts about the abbreviations of the Themes, as many found the names confusing.
 
-| Abbreviation example | Explanation of abbreviations  |
-| -------------------- | ----------------------------- |
-| Theme-Name-B         | Theme with `Border` decoration                                 |
+| Abbreviation example | Explanation of abbreviations                                   |
+| -------------------- | -------------------------------------------------------------- |
+| Theme-Name-B-MB      | Theme with `Border` decoration and `macOS Buttons` in Windows  |
 | Theme-Name-B-LB      | Theme with `Border` decoration and `Legacy Buttons` in Windows |
 | Theme-Name-B-GS      | Theme with `Border` decoration for `Gnome Shell`               |
-| Theme-Name-BL        | Theme `Borderless` decoration                                  |
+| Theme-Name-BL-MB     | Theme `Borderless` decoration and `macOS Buttons` in Windows   |
 | Theme-Name-BL-LB     | Theme `Borderless` decoration and `Legacy Buttons` in Windows  |
 | Theme-Name-BL-GS     | Theme `Borderless` decoration for `Gnome Shell`                |
 
 ### Looking for other themes with Neovim colour schemes?
 
-| Neovim Colorschemes for GTK   | Source  | Package  |
-| ----------------------------- | ------- | -------- |
+| Neovim Colorschemes for GTK   | Source                                                              | Package                                   |
+| ----------------------------- | ------------------------------------------------------------------- | ----------------------------------------- |
 | Catppuccin GTK Theme          | [Github](https://github.com/Fausto-Korpsvart/Catppuccin-GTK-Theme)  | [Pling](https://www.pling.com/p/1715554/) |
 | Everforest GTK Theme          | [Github](https://github.com/Fausto-Korpsvart/Everforest-GTK-Theme)  | [Pling](https://www.pling.com/p/1695467/) |
 | Gruvbox Material GTK Theme    | [Github](https://github.com/Fausto-Korpsvart/Gruvbox-GTK-Theme)     | [Pling](https://www.pling.com/p/1681313/) |
