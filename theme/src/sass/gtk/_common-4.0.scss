@@ -1684,8 +1684,7 @@ button.combo:only-child {
  ************/
 .toolbar {
     padding: $space-size;
-    // background-color: $background;
-    background-color: if($variant == 'light', #d2d2da, #15161e);
+    background-color: if($variant == 'light', $grey-150, $grey-900);
     border-spacing: $space-size;
 
     button {
@@ -2604,17 +2603,31 @@ popover {
         border: none;
 
         @if $outline == 'false' {
-            box-shadow: $shadow-z4;
+            // box-shadow: none;
+            box-shadow:
+                $shadow-z16,
+                inset 0 1px highlight($background),
+                0 0 36px transparent;
         } @else {
             box-shadow:
-                $shadow-z4,
-                0 0 0 2px $primary;
+                $shadow-z16,
+                0 0 0 2px $primary,
+                0 0 36px transparent;
         }
     }
 
     > arrow {
-        @if $outline == 'true' {
-            border: 2px solid $primary;
+        @if $outline == 'false' {
+            // box-shadow: none;
+            box-shadow:
+                $shadow-z16,
+                inset 0 1px highlight($background),
+                0 0 36px transparent;
+        } @else {
+            box-shadow:
+                $shadow-z16,
+                0 0 0 2px $primary,
+                0 0 36px transparent;
         }
     }
 
@@ -5219,11 +5232,11 @@ separator.sidebar {
 filechooser {
     paned {
         > separator {
-            background: none;
+            background: $border;
         }
 
         > box {
-            @extend %content_style;
+            background-color: if($variant == 'light', $grey-150, $grey-900);
 
             #pathbarbox.view,
             stack.view,

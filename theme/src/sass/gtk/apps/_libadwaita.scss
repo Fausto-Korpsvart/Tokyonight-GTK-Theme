@@ -396,7 +396,7 @@ overlay-split-view {
 
 // Sidebar
 %sidebar_style {
-    background-color: if($variant == 'light', #d2d2da, #15161e);
+    background-color: if($variant == 'light', $grey-150, $grey-900);
     color: on($background);
     border-radius: none;
     margin: 0;
@@ -605,14 +605,9 @@ overlay-split-view {
 }
 
 .sidebar-pane {
-    background-color: if($variant == 'light', #d2d2da, #15161e);
+    background-color: if($variant == 'light', $grey-150, $grey-900);
     color: $text;
     border-top-left-radius: $window-radius;
-
-    // &:backdrop {
-    //     background-color: transparent;
-    //     transition: none;
-    // }
 
     .sidebar-pane {
         background-color: transparent;
@@ -631,35 +626,6 @@ overlay-split-view {
         padding: $space-size - 4 $space-size - 2; //only vertical padding. horizontal row size would clip
         background: none;
         color: $titlebar-text-secondary;
-
-        // > row {
-        //     color: $text;
-        //     min-height: $small-size;
-        //     padding: 0 $space-size 0 $space-size;
-        //     margin: 1px;
-        //     border-radius: $modal-radius;
-
-        //     &:hover,
-        //     &:active,
-        //     &:focus {
-        //         color: $text;
-        //     }
-
-        //     &:selected {
-        //         font-weight: 500;
-        //         color: $primary;
-
-        //         &:hover,
-        //         &:focus {
-        //             background-color: if(
-        //                 $variant == 'light',
-        //                 rgba($base, 0.4),
-        //                 $fill
-        //             );
-        //             color: $primary;
-        //         }
-        //     }
-        // }
     }
 
     &:dir(ltr),
@@ -766,17 +732,17 @@ panelthemeselector {
         &.follow {
             background-image: linear-gradient(
                 to bottom right,
-                #e9e9ed 50%,
-                #292e42 50%
+                $grey-050 50%,
+                $grey-750 50%
             );
         }
 
         &.light {
-            background-color: #e9e9ed;
+            background-color: $grey-050;
         }
 
         &.dark {
-            background-color: #292e42;
+            background-color: $grey-750;
         }
 
         &.theme-selector radio {
