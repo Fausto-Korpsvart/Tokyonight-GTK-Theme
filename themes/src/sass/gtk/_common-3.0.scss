@@ -3027,7 +3027,9 @@ check {
 	&:checked {
 		-gtk-icon-source: -gtk-scaled(
 			- gtk-recolor(url('assets/scalable/checkbox-checked-symbolic.svg')),
-			- gtk-recolor(url('assets/scalable/checkbox-checked-symbolic@2.svg'))
+			- gtk-recolor(
+					url('assets/scalable/checkbox-checked-symbolic@2.svg')
+				)
 		);
 	}
 	&:indeterminate {
@@ -3061,14 +3063,22 @@ menu menuitem check {
 
 	&:checked {
 		-gtk-icon-source: -gtk-scaled(
-			- gtk-recolor(url('assets/scalable/small-checkbox-checked-symbolic.svg')),
-			- gtk-recolor(url('assets/scalable/small-checkbox-checked-symbolic@2.svg'))
+			- gtk-recolor(
+					url('assets/scalable/small-checkbox-checked-symbolic.svg')
+				),
+			- gtk-recolor(
+					url('assets/scalable/small-checkbox-checked-symbolic@2.svg')
+				)
 		);
 	}
 	&:indeterminate {
 		-gtk-icon-source: -gtk-scaled(
-			- gtk-recolor(url('assets/scalable/small-checkbox-mixed-symbolic.svg')),
-			- gtk-recolor(url('assets/scalable/small-checkbox-mixed-symbolic@2.svg'))
+			- gtk-recolor(
+					url('assets/scalable/small-checkbox-mixed-symbolic.svg')
+				),
+			- gtk-recolor(
+					url('assets/scalable/small-checkbox-mixed-symbolic@2.svg')
+				)
 		);
 	}
 }
@@ -3080,14 +3090,20 @@ menu menuitem radio {
 
 	&:checked {
 		-gtk-icon-source: -gtk-scaled(
-			- gtk-recolor(url('assets/scalable/small-radio-checked-symbolic.svg')),
-			- gtk-recolor(url('assets/scalable/small-radio-checked-symbolic@2.svg'))
+			- gtk-recolor(
+					url('assets/scalable/small-radio-checked-symbolic.svg')
+				),
+			- gtk-recolor(
+					url('assets/scalable/small-radio-checked-symbolic@2.svg')
+				)
 		);
 	}
 	&:indeterminate {
 		-gtk-icon-source: -gtk-scaled(
 			- gtk-recolor(url('assets/scalable/small-radio-mixed-symbolic.svg')),
-			- gtk-recolor(url('assets/scalable/small-radio-mixed-symbolic@2.svg'))
+			- gtk-recolor(
+					url('assets/scalable/small-radio-mixed-symbolic@2.svg')
+				)
 		);
 	}
 }
@@ -3157,7 +3173,9 @@ treeview.view {
 		color: on($assets-color);
 		-gtk-icon-source: -gtk-scaled(
 			- gtk-recolor(url('assets/scalable/checkbox-checked-symbolic.svg')),
-			- gtk-recolor(url('assets/scalable/checkbox-checked-symbolic@2.svg'))
+			- gtk-recolor(
+					url('assets/scalable/checkbox-checked-symbolic@2.svg')
+				)
 		);
 	}
 }
@@ -4991,7 +5009,9 @@ button.titlebutton:not(.suggested-action):not(.destructive-action) {
 // touch selection handlebars for the Popover.osd above
 cursor-handle {
 	color: $primary;
-	-gtk-icon-source: -gtk-recolor(url('assets/scalable/cursor-handle-symbolic.svg'));
+	-gtk-icon-source: -gtk-recolor(
+		url('assets/scalable/cursor-handle-symbolic.svg')
+	);
 
 	&.top:dir(ltr),
 	&.bottom:dir(rtl) {
