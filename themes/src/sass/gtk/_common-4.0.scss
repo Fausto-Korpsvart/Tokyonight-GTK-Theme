@@ -2044,7 +2044,7 @@ headerbar {
 			rgba($white, 0.6),
 			$titlebar-fill
 		);
-	    border-radius: $corner-radius;
+		border-radius: $corner-radius;
 
 		button:not(.suggested-action):not(.destructive-action) {
 			&:not(:hover):not(:active):not(:checked) {
@@ -5191,6 +5191,10 @@ separator.sidebar {
 		margin: $space-size / 2 0;
 	}
 
+	row.activatable label.dim-label {
+		color: $text-secondary-disabled;
+	}
+
 	> row {
 		min-height: $small-size;
 		padding: 0 $space-size 0 $space-size;
@@ -5243,7 +5247,6 @@ separator.sidebar {
 /****************
  * File chooser *
  ****************/
-
 filechooser {
 	paned {
 		> separator {
@@ -5295,6 +5298,10 @@ filechooserbutton > button > box {
 filechooserbutton:drop(active) {
 	box-shadow: none;
 	border-color: transparent;
+}
+
+filechooser child.activatable filelistcell.dim-label {
+	color: $text-secondary;
 }
 
 // dim the sidebar icons, see bug #786613 for details on this oddity
