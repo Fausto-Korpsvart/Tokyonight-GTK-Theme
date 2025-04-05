@@ -69,7 +69,7 @@ avatar {
 		color: $text-secondary;
 		box-shadow: none;
 		outline: none;
-		background-color: if($variant == 'light', rgba($base, 0.4), $fill);
+		background-color: if($variant == 'light', rgba($base, 0.5), $fill);
 		color: $text;
 	}
 
@@ -275,6 +275,11 @@ preferencespage > scrolledwindow > viewport > clamp > box {
 }
 
 preferencesgroup > box {
+	background-preview widget.sidebar,
+	widget.header-bar:not(.editable-area) {
+		background-color: if($variant == 'light', $grey-150, $grey-900);
+	}
+
 	&,
 	.labels {
 		border-spacing: $space-size;
@@ -385,6 +390,37 @@ preferencesgroup > box {
 
 		&.slate {
 			--accent-bg-color: var(--accent-slate);
+		}
+	}
+
+	box > list.boxed-list-separate {
+		background-color: transparent;
+		border-radius: $corner-radius;
+		& row {
+			color: $text;
+			background-color: if($variant == 'light', $base, $fill);
+			border-radius: $corner-radius $corner-radius 0 0;
+			margin-top: 0px;
+			margin-bottom: 2px;
+
+			&:first-child {
+				border-radius: $corner-radius $corner-radius 0 0;
+			}
+
+			&:last-child {
+				border-radius: 0 0 $corner-radius $corner-radius;
+				margin-bottom: 0;
+			}
+
+			& + row {
+				margin-top: 2px;
+			}
+
+			&:hover,
+			&:focus {
+				color: $text-secondary;
+				background-color: if($variant == 'light', $base, $fill);
+			}
 		}
 	}
 }
@@ -510,18 +546,22 @@ overlay-split-view {
 %sidebar_scrollbar {
 	> range > trough {
 		> slider {
-			background-color: $text-disabled;
+			background-color: if($variant == 'dark', $grey-800, $grey-200);
 
 			&:hover {
-				background-color: $text-secondary;
+				background-color: if($variant == 'dark', $grey-750, $grey-200);
 			}
 
 			&:active {
-				background-color: $text;
+				background-color: if($variant == 'dark', $grey-750, $grey-200);
 			}
 
 			&:disabled {
-				background-color: $text-secondary-disabled;
+				background-color: if(
+					$variant == 'dark',
+					$background,
+					$grey-050
+				);
 			}
 		}
 	}
@@ -574,14 +614,16 @@ overlay-split-view {
 		}
 
 		&:selected {
-			font-weight: 500;
-			background-color: if($variant == 'light', rgba($base, 0.4), $fill);
+			/* background-color: if($variant == 'light', rgba($base, 0.4), $fill); */
+			background-color: $overlay-hover;
 			color: $primary;
+			font-weight: 500;
 			/* border-left: 3px solid $primary; */
 
 			&:hover,
 			&:focus {
-				background-color: rgba($base, 0.9);
+				/* background-color: rgba($base, 0.9); */
+				background-color: $overlay-hover;
 				color: $text;
 			}
 		}
