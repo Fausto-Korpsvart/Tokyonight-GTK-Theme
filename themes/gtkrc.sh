@@ -44,7 +44,7 @@ make_gtkrc() {
 			;;
 		esac
 
-		if [[ "$ctype" == '-Nord' ]]; then
+		if [[ "$ctype" == '-Moon' ]]; then
 			case "$theme" in
 			'')
 				theme_color='#5e81ac'
@@ -76,7 +76,7 @@ make_gtkrc() {
 			esac
 		fi
 
-		if [[ "$ctype" == '-Dracula' ]]; then
+		if [[ "$ctype" == '-Storm' ]]; then
 			case "$theme" in
 			'')
 				theme_color='#a679ec'
@@ -138,7 +138,7 @@ make_gtkrc() {
 			;;
 		esac
 
-		if [[ "$ctype" == '-Nord' ]]; then
+		if [[ "$ctype" == '-Moon' ]]; then
 			case "$theme" in
 			'')
 				theme_color='#89a3c2'
@@ -170,7 +170,7 @@ make_gtkrc() {
 			esac
 		fi
 
-		if [[ "$ctype" == '-Dracula' ]]; then
+		if [[ "$ctype" == '-Storm' ]]; then
 			case "$theme" in
 			'')
 				theme_color='#bd93f9'
@@ -213,7 +213,7 @@ make_gtkrc() {
 			titlebar_light='#F2F2F2'
 			titlebar_dark='#030303'
 			;;
-		-Nord)
+		-Moon)
 			background_light='#f8fafc'
 			background_dark='#0d0e11'
 			background_darker='#0f1115'
@@ -221,7 +221,7 @@ make_gtkrc() {
 			titlebar_light='#f0f1f4'
 			titlebar_dark='#020203'
 			;;
-		-Dracula)
+		-Storm)
 			background_light='#f9f9fb'
 			background_dark='#0d0d11'
 			background_darker='#0f1015'
@@ -240,7 +240,7 @@ make_gtkrc() {
 			titlebar_light='#F2F2F2'
 			titlebar_dark='#242424'
 			;;
-		-Nord)
+		-Moon)
 			background_light='#f8fafc'
 			background_dark='#242932'
 			background_darker='#333a47'
@@ -248,7 +248,7 @@ make_gtkrc() {
 			titlebar_light='#f0f1f4'
 			titlebar_dark='#1e222a'
 			;;
-		-Dracula)
+		-Storm)
 			background_light='#f9f9fb'
 			background_dark='#242632'
 			background_darker='#343746'
@@ -258,6 +258,8 @@ make_gtkrc() {
 			;;
 		esac
 	fi
+
+	mkdir -p "${THEME_DIR}/gtk-2.0"
 
 	cp -r "${GTKRC_DIR}/gtkrc${ELSE_DARK:-}-default" "${THEME_DIR}/gtk-2.0/gtkrc"
 	sed -i "s/#FFFFFF/${background_light}/g" "${THEME_DIR}/gtk-2.0/gtkrc"
