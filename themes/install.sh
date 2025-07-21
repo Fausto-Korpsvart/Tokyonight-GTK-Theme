@@ -74,7 +74,7 @@ OPTIONS:
                           2. black      	Blackness color version
                           3. float      	Floating gnome-shell panel style
                           4. outline    	Windows with 2px outline style
-                          5. macos:				Macos style windows button
+                          5. macos 			macOS style windows button
 
   -h, --help              Show help
 EOF

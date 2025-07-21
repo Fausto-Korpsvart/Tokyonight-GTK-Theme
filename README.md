@@ -100,10 +100,16 @@ Run the following command in the terminal for a general installation
 ./install.sh
 ```
 
-The `./install.sh` allows some specific options like:
+> The `./install.sh` allows some specific options like:
 
 ```sh
-./install.sh --tweaks moon mac outline float -t green -l
+./install.sh --tweaks storm macos outline float -t green -l
+```
+
+> To customise the name of the theme, you can use the `-n` parameter, e.g.
+
+```sh
+./install.sh -n "Tokyonight-Float-Border" --tweaks outline float
 ```
 
 > [!TIP]
@@ -113,14 +119,19 @@ The `./install.sh` allows some specific options like:
 
 ```
 -d, --dest DIR          Specify destination directory (Default: ~/.themes)
--n, --name NAME         Specify theme name (Default: Everforest)
+
+-n, --name NAME         Specify theme name (Default: Tokyonight)
+
 -t, --theme VARIANT...  Specify theme accent color variant(s) [default|purple|pink|red|orange|yellow|green|teal|grey|all] (Default: blue)
+
 -c, --color VARIANT...  Specify color variant(s) [light|dark] (Default: All variants)
+
 -s, --size VARIANT...   Specify size variant [standard|compact] (Default: standard variant)
 
 -l, --libadwaita        Link installed gtk-4.0 theme to config folder for all libadwaita app use this theme
 
 -r, --remove,
+
 -u, --uninstall         Uninstall/Remove installed themes or links
 
 --tweaks                Specify versions for tweaks
@@ -128,6 +139,7 @@ The `./install.sh` allows some specific options like:
                         2. black         Blackness color version
                         3. float         Floating gnome-shell panel style
                         4. outline       Windows with 2px outline style
+                        5. macos         macOS style windows button
 
 -h, --help              Show help
 ```
