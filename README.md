@@ -59,7 +59,7 @@ sudo apt install gtk2-engines-murrine
 
 ## 🔨 Applying the Theme
 
-- For **GTK3**, apply themes from **Gnome Tweaks** or **Refine**
+- For **GTK3**, apply themes from **Gnome Tweaks**, **Refine** or **Tuner**
 - For GTK4 applications it is only necessary to have moved the `assets`, `gtk.css` and `gtk-dark.css` files to the `~/.config/gtk-4.0` path,
   and if you notice that the theme has not been applied, just close and reopen the application.
 
@@ -122,7 +122,7 @@ Run the following command in the terminal for a general installation
 
 -n, --name NAME         Specify theme name (Default: Tokyonight)
 
--t, --theme VARIANT...  Specify theme accent color variant(s) [default|purple|pink|red|orange|yellow|green|teal|grey|all] (Default: blue)
+-t, --theme VARIANT...  Specify theme accent color variant(s) [default|green|grey|orange|pink|purple|red|teal|yellow|all] (Default: blue)
 
 -c, --color VARIANT...  Specify color variant(s) [light|dark] (Default: All variants)
 

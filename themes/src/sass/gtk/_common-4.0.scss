@@ -1520,154 +1520,68 @@ spinbutton {
 	}
 }
 
-/**************
- * ComboBoxes *
- **************/
-// dropdown > popover.menu.background > contents { padding: 0; }
+/*************
+ * dropdowns *
+ *************/
 
-dropdown > button > box {
-	border-spacing: $space-size;
-}
+dropdown {
+	> button > box {
+		border-spacing: $space-size;
 
-dropdown,
-combobox {
+		> stack > row.activatable {
+			&:hover,
+			&:active {
+				background: none;
+			}
+		}
+	}
+
 	arrow {
 		-gtk-icon-source: -gtk-icontheme('pan-down-symbolic');
 		min-height: 16px;
 		min-width: 16px;
 	}
 
-	// align menu labels with the button label
-	> popover.menu > contents modelbutton {
-		padding-left: 9px;
-		padding-right: 9px;
-	}
+	&:drop(active) {
+		// FIXME: untested
+		box-shadow: none;
 
-	button.combo cellview {
-		&:dir(ltr) {
-			margin-left: 8px - ($medium-size - 16px) / 2;
-		}
-		&:dir(rtl) {
-			margin-right: 8px - ($medium-size - 16px) / 2;
+		button.combo {
+			color: $drop_target_color;
+			box-shadow: inset 0 0 0 2px $drop_target_color;
 		}
 	}
 
-	// newstyle
-	popover {
-		margin-top: $space-size - 2px;
-		padding: 0;
+	popover.menu {
+		padding: $space-size 0 0;
 
-		listview {
-			margin: 0;
+		listview > row {
+			min-width: 0;
+			padding: $space-size;
 
-			> row {
-				padding: $space-size;
-
-				&:selected {
-					color: $text;
-					background-color: $overlay-selected;
-				}
+			&:selected {
+				color: $text;
+				background-color: $overlay-selected;
 			}
 		}
 
-		// drodowns with searchboxes on top
+		// dropdowns with searchboxes on top
 		.dropdown-searchbar {
 			padding: $space-size;
-		}
-	}
 
-	&.linked {
-		button:nth-child(2) {
-			&:dir(ltr) {
-				border-top-left-radius: 0;
-				border-bottom-left-radius: 0;
-			}
-			&:dir(rtl) {
-				border-top-right-radius: 0;
-				border-bottom-right-radius: 0;
+			+ scrolledwindow:not(.undershoot-top) {
+				@include undershoot(top);
 			}
 		}
 	}
-
-	> .linked:not(.vertical) > entry:not(:only-child) {
-		border-radius: $corner-radius;
-
-		&:first-child {
-			margin-right: -$medium-size;
-			padding-right: $medium-size;
-		}
-
-		&:last-child {
-			margin-left: -$medium-size;
-			padding-left: $medium-size;
-		}
-	}
-
-	> .linked:not(.vertical) > button:not(:only-child) {
-		@extend %button-flat;
-		// @extend %small-button;
-
-		min-height: 16px;
-		min-width: 16px;
-		margin: ($medium-size - $small-size) / 2;
-		padding: ($small-size - 16px) / 2;
-		border-radius: $corner-radius;
-	}
 }
 
-// the combo is a composite widget so the way we do button linking doesn't
-// work, special case needed. See
-// https://bugzilla.gnome.org/show_bug.cgi?id=733979
+/**************
+ * ComboBoxes *
+ **************/
 
-.linked:not(.vertical) > combobox {
-	&:not(:first-child) > box > button.combo {
-		border-top-left-radius: 0;
-		border-bottom-left-radius: 0;
-	}
-
-	&:not(:last-child) > box > button.combo {
-		border-top-right-radius: 0;
-		border-bottom-right-radius: 0;
-	}
-}
-
-.linked.vertical > combobox {
-	&:not(:first-child) > box > button.combo {
-		border-top-left-radius: 0;
-		border-top-right-radius: 0;
-	}
-
-	&:not(:last-child) > box > button.combo {
-		border-bottom-left-radius: 0;
-		border-bottom-right-radius: 0;
-	}
-}
-
-button.combo:only-child {
-	border-radius: $corner-radius;
-	font-weight: normal;
-
-	@include entry(normal);
-
-	&:focus {
-		@include button(flat-focus);
-	}
-
-	&:hover {
-		@include button(flat-hover);
-	}
-
-	&:active {
-		@include button(flat-active);
-	}
-
-	&:checked {
-		@include button(flat-checked);
-	}
-
-	&:disabled {
-		@include button(disabled);
-	}
+combobox {
+	@extend dropdown;
 }
 
 /************
@@ -5813,34 +5727,32 @@ window {
 	min-height: 16px;
 	min-width: 16px;
 	padding: 0;
-	margin: ($large-size - 22px) / 2 $space-size / 6;
 
 	&.minimize,
 	&.maximize,
 	&.close {
 		color: transparent;
-		background: none;
 
-		&:hover,
-		&:active {
+		image {
+			padding: 0;
+		}
+
+		&:hover {
 			box-shadow: none;
 		}
 
-		&:active > image {
+		&:active {
 			box-shadow: inset 0 0 0 9999px
 				rgba(black, if($topbar == 'dark', 0.25, 0.12));
 		}
 
 		&:hover,
 		&:active {
-			/* color: if($colorscheme != 'solarized', $white, rgba($black, 0.5)); */
 			color: rgba($white, 0.6);
 		}
 
 		&:backdrop {
-			> image {
-				background-color: $titlebar-track;
-			}
+			background-color: $titlebar-track;
 
 			&:hover,
 			&:active {
@@ -5851,33 +5763,27 @@ window {
 
 	&.minimize {
 		// Window minimize button
-		> image {
-			background-color: $titlebutton-min;
-		}
+		background-color: $titlebutton-min;
 
-		&:active > image {
+		&:active {
 			background-color: mix($titlebar-text, $titlebutton-min, 25%);
 		}
 	}
 
 	&.maximize {
 		// Window maximize button
-		> image {
-			background-color: $titlebutton-max;
-		}
+		background-color: $titlebutton-max;
 
-		&:active > image {
+		&:active {
 			background-color: mix($titlebar-text, $titlebutton-max, 25%);
 		}
 	}
 
 	&.close {
 		// Window close button
-		> image {
-			background-color: $titlebutton-close;
-		}
+		background-color: $titlebutton-close;
 
-		&:active > image {
+		&:active {
 			background-color: mix($titlebar-text, $titlebutton-close, 25%);
 		}
 	}
@@ -5887,50 +5793,42 @@ window {
 	min-height: 22px;
 	min-width: 22px;
 	padding: 0;
-	margin: ($large-size - 22px) / 2 $space-size / 2;
 
 	&.minimize,
 	&.maximize,
 	&.close {
 		color: $titlebar-text-secondary;
+		background-color: gtkalpha(currentColor, 0.1);
 
 		image {
 			padding: 0;
-			margin: 0;
-			background-color: transparent;
+			background: none;
+			box-shadow: none;
 		}
 
 		&:hover {
-			box-shadow: none;
-			background-color: $titlebar-indicator;
-			color: on($titlebar-indicator);
+			color: $titlebar-text;
+			background-color: gtkalpha(currentColor, 0.15);
+			box-shadow:
+				0 1px 3px rgba(black, 0.1),
+				inset 0 1px highlight($titlebar);
 		}
 
 		&:active {
-			color: on($titlebar-indicator);
-			background-color: $titlebar-indicator;
-			background-image: radial-gradient(
-				circle,
-				on($titlebar-indicator, divider) 10%,
-				transparent 0%
-			);
+			color: $titlebar-text;
+			background-color: gtkalpha(currentColor, 0.2);
 		}
 
 		&:backdrop {
-			color: $titlebar-text-secondary-disabled;
-
-			&:hover {
-				color: on($titlebar-indicator);
-			}
+			opacity: 0.65;
 		}
 	}
 }
 
-$window-space: if($window_button == 'mac', $space-size * 1.5, $space-size);
+$window-space: if($window_button == 'mac', $space-size, $space-size - 2px);
 
-headerbar windowcontrols {
+windowcontrols {
 	border-spacing: $space-size;
-	padding: 0;
 
 	&:not(.empty) {
 		&.start:dir(ltr),
@@ -5946,18 +5844,27 @@ headerbar windowcontrols {
 		}
 	}
 
-	> button:not(.suggested-action):not(.destructive-action) {
+	button:not(.suggested-action):not(.destructive-action) {
 		@extend %circular-button;
 
 		@if $window_button == 'mac' {
 			@extend %mac_window_button;
+			margin: ($large-size - 16px) / 2 $space-size - 6px;
 		} @else {
 			@extend %normal_window_button;
+			margin: ($large-size - 22px) / 2 $space-size - 6px;
 		}
+	}
+}
 
-		> image {
-			border-radius: 100%;
-			padding: 0;
+headerbar.default-decoration windowcontrols {
+	button:not(.suggested-action):not(.destructive-action) {
+		@if $window_button == 'mac' {
+			@extend %mac_window_button;
+			margin: ($medium-size - 16px) / 2 $space-size - 2px;
+		} @else {
+			@extend %normal_window_button;
+			margin: ($medium-size - 22px) / 2 $space-size - 2px;
 		}
 	}
 }

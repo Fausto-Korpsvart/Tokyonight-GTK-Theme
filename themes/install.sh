@@ -11,6 +11,7 @@ ROOT_UID=0
 DEST_DIR=
 
 ctype=
+window=
 
 # Destination directory
 if [ "$UID" -eq "$ROOT_UID" ]; then
@@ -22,7 +23,7 @@ fi
 SASSC_OPT="-M -t expanded"
 
 THEME_NAME=Tokyonight
-THEME_VARIANTS=('' '-Purple' '-Pink' '-Red' '-Orange' '-Yellow' '-Green' '-Teal' '-Grey')
+THEME_VARIANTS=('' '-Green' '-Grey' '-Orange' '-Pink' '-Purple' '-Red' '-Teal' '-Yellow')
 COLOR_VARIANTS=('-Light' '-Dark')
 SIZE_VARIANTS=('' '-Compact')
 
@@ -58,7 +59,7 @@ OPTIONS:
 
   -n, --name NAME         Specify theme name (Default: $THEME_NAME)
 
-  -t, --theme VARIANT     Specify theme color variant(s) [default|purple|pink|red|orange|yellow|green|teal|grey|all] (Default: blue)
+  -t, --theme VARIANT     Specify theme color variant(s) [default|green|grey|orange|pink|purple|red|teal|yellow|all] (Default: blue)
 
   -c, --color VARIANT     Specify color variant(s) [light|dark] (Default: All variants))
 
@@ -74,7 +75,7 @@ OPTIONS:
                           2. black      	Blackness color version
                           3. float      	Floating gnome-shell panel style
                           4. outline    	Windows with 2px outline style
-                          5. macos 			macOS style windows button
+                          5. macos			macOS style windows button
 
   -h, --help              Show help
 EOF
@@ -87,6 +88,7 @@ install() {
 	local color="${4}"
 	local size="${5}"
 	local ctype="${6}"
+	local window="${7}"
 
 	[[ "${color}" == '-Light' ]] && local ELSE_LIGHT="${color}"
 	[[ "${color}" == '-Dark' ]] && local ELSE_DARK="${color}"
@@ -249,27 +251,27 @@ while [[ $# -gt 0 ]]; do
 				themes+=("${THEME_VARIANTS[0]}")
 				shift
 				;;
-			purple)
+			green)
 				themes+=("${THEME_VARIANTS[1]}")
 				shift
 				;;
-			pink)
+			grey)
 				themes+=("${THEME_VARIANTS[2]}")
 				shift
 				;;
-			red)
+			orange)
 				themes+=("${THEME_VARIANTS[3]}")
 				shift
 				;;
-			orange)
+			pink)
 				themes+=("${THEME_VARIANTS[4]}")
 				shift
 				;;
-			yellow)
+			purple)
 				themes+=("${THEME_VARIANTS[5]}")
 				shift
 				;;
-			green)
+			red)
 				themes+=("${THEME_VARIANTS[6]}")
 				shift
 				;;
@@ -277,7 +279,7 @@ while [[ $# -gt 0 ]]; do
 				themes+=("${THEME_VARIANTS[7]}")
 				shift
 				;;
-			grey)
+			yellow)
 				themes+=("${THEME_VARIANTS[8]}")
 				shift
 				;;
@@ -466,29 +468,29 @@ gnome_shell_version() {
 theme_color() {
 	if [[ "$theme" != '' ]]; then
 		case "$theme" in
-		-Purple)
-			theme_color='purple'
+		-Green)
+			theme_color='green'
 			;;
-		-Pink)
-			theme_color='pink'
-			;;
-		-Red)
-			theme_color='red'
+		-Grey)
+			theme_color='grey'
 			;;
 		-Orange)
 			theme_color='orange'
 			;;
-		-Yellow)
-			theme_color='yellow'
+		-Pink)
+			theme_color='pink'
 			;;
-		-Green)
-			theme_color='green'
+		-Purple)
+			theme_color='purple'
+			;;
+		-Red)
+			theme_color='red'
 			;;
 		-Teal)
 			theme_color='teal'
 			;;
-		-Grey)
-			theme_color='grey'
+		-Yellow)
+			theme_color='yellow'
 			;;
 		esac
 		tweaks_temp
@@ -568,8 +570,8 @@ install_theme() {
 	for theme in "${themes[@]}"; do
 		for color in "${colors[@]}"; do
 			for size in "${sizes[@]}"; do
-				install "${dest:-$DEST_DIR}" "${name:-$THEME_NAME}" "$theme" "$color" "$size" "$ctype"
-				make_gtkrc "${dest:-$DEST_DIR}" "${name:-$THEME_NAME}" "$theme" "$color" "$size" "$ctype"
+				install "${dest:-$DEST_DIR}" "${_name:-$THEME_NAME}" "$theme" "$color" "$size" "$ctype" "$window"
+				make_gtkrc "${dest:-$DEST_DIR}" "${_name:-$THEME_NAME}" "$theme" "$color" "$size" "$ctype" "$window"
 			done
 		done
 	done

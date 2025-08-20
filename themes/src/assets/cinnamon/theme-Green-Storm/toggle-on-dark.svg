@@ -63,9 +63,9 @@
      height="24"
      rx="12"
      ry="12"
-     fill="#4CAF50"
+     fill="#009688"
      stroke-width="0"
-     style="paint-order:stroke fill markers;fill:#1abc9c;fill-opacity:1"
+     style="paint-order:stroke fill markers;fill:#9ece6a;fill-opacity:1"
      id="rect2" />
   <circle
      cx="36"
