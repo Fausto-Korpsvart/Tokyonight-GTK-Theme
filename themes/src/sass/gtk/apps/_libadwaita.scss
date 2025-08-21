@@ -23,12 +23,12 @@
 
 // Sidebar & Scrollbar
 %sidebar_style {
-	background-color: if($variant == 'light', $grey-150, $grey-900);
+	background-color: if($variant == 'light', $grey-100, $grey-900);
 
 	@if $colorscheme == 'moon' {
-		background-color: if($variant == 'light', $grey-150, #1f2231);
+		background-color: if($variant == 'light', $grey-100, #1f2231);
 	} @else if $colorscheme == 'storm' {
-		background-color: if($variant == 'light', $grey-150, #222436);
+		background-color: if($variant == 'light', $grey-100, #222436);
 	}
 
 	color: on($background);
@@ -290,7 +290,7 @@ avatar {
 		color: $text-secondary;
 		box-shadow: none;
 		outline: none;
-		background-color: if($variant == 'light', rgba($base, 0.5), $fill);
+		background-color: if($variant == 'light', $grey-100, $fill);
 		color: $text;
 	}
 

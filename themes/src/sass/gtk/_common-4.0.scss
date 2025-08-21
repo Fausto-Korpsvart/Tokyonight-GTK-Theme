@@ -4159,7 +4159,7 @@ separator {
  * Lists *
  *********/
 
-$list-row: if($variant == 'light', rgba($base, 0.5), $fill);
+$list-row: if($variant == 'light', $grey-100, $fill);
 
 %circular_list {
 	border-radius: $corner-radius;
