@@ -10,7 +10,7 @@
 </p>
 
 A GTK theme based on the colours of [Folke's](https://github.com/folke) great theme: [Tokyonight for Neovim](https://github.com/folke/tokyonight.nvim) <br>
-the [VinceLiuice's](https://github.com/vinceliuice) awesome: [Magnetic GTK theme](https://github.com/vinceliuice/Magnetic-gtk-theme), and the creativity of [Gusbemacbe's](https://github.com/gusbemacbe): [Suru Plus Icon Theme](https://github.com/gusbemacbe/suru-plus).
+the [VinceLiuice's](https://github.com/vinceliuice) Awesome GTK Themes and the creativity of [Gusbemacbe's](https://github.com/gusbemacbe): [Suru Plus Icon Theme](https://github.com/gusbemacbe/suru-plus).
 
 ![Tokyonight](https://raw.githubusercontent.com/Fausto-Korpsvart/Tokyo-Night-GTK-Theme/master/extra/screenshots/Tokyonight.png)
 
