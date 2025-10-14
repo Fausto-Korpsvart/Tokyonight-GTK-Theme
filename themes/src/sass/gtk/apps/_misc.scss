@@ -104,7 +104,7 @@ window.background > box.vertical > scrolledwindow > widget toolbar {
  * Chromium *
  ************/
 window.background.chromium {
-	background-color: $background;
+	background-color: $base;
 	color: $text;
 
 	headerbar.titlebar {
