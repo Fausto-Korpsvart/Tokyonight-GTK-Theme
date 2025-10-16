@@ -566,6 +566,44 @@ link_theme() {
 	done
 }
 
+set_gtk_theme() {
+	local theme_name="${name:-$THEME_NAME}${themes[0]}${colors[0]}${sizes[0]}${ctype}"
+
+	echo "Setting GTK theme to: $theme_name"
+
+	# Set GTK theme using gsettings for GNOME
+	if has_command gsettings && [[ -n "$DISPLAY" ]]; then
+		gsettings set org.gnome.desktop.interface gtk-theme "$theme_name"
+		echo "GTK theme set via gsettings"
+	fi
+
+	# Set theme for XFCE
+	if has_command xfconf-query && (pgrep xfce4-session &>/dev/null); then
+		xfconf-query -c xsettings -p /Net/ThemeName -s "$theme_name"
+		echo "GTK theme set for XFCE"
+	fi
+
+	# Set theme via gtk-3.0 settings.ini
+	local gtk3_config="$HOME/.config/gtk-3.0/settings.ini"
+	mkdir -p "$HOME/.config/gtk-3.0"
+
+	if [[ -f "$gtk3_config" ]]; then
+		# Update existing file
+		if grep -q "gtk-theme-name" "$gtk3_config"; then
+			sed -i "s/gtk-theme-name=.*/gtk-theme-name=$theme_name/" "$gtk3_config"
+		else
+			echo "gtk-theme-name=$theme_name" >> "$gtk3_config"
+		fi
+	else
+		# Create new file
+		cat > "$gtk3_config" << EOF
+[Settings]
+gtk-theme-name=$theme_name
+EOF
+	fi
+	echo "GTK theme set in settings.ini"
+}
+
 install_theme() {
 	for theme in "${themes[@]}"; do
 		for color in "${colors[@]}"; do
@@ -575,6 +613,9 @@ install_theme() {
 			done
 		done
 	done
+
+	# Set the first installed theme as active
+	set_gtk_theme
 
 	if has_command xfce4-popup-whiskermen; then
 		sed -i "s|.*menu-opacity=.*|menu-opacity=0|" "$HOME/.config/xfce4/panel/whiskermenu"*".rc"
