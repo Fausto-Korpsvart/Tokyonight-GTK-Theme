@@ -40,7 +40,7 @@ Here are some commands to install on some distributions.
 - On Arch run:
 
 ```sh
-sudo pacman -S gtk-engine-murrine
+yay -S gtk-engine-murrine
 ```
 
 - On Debian and derivatives run:
