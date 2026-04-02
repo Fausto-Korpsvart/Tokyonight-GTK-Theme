@@ -217,11 +217,12 @@ dialog.xfsm-logout-dialog {
 	.standard-view.frame {
 		border: none;
 
-		widget.view {
+		.view {
 			// padding: $space-size; // Not work ?
+			background-color: $fill;
 
-			&:selected {
-				@extend %selected_items;
+			widget, widget:hover {
+				background-color: transparent;
 			}
 		}
 	}
@@ -240,7 +241,15 @@ dialog.xfsm-logout-dialog {
 	statusbar {
 		margin: 0 -10px;
 		padding: 0 4px;
-		border-top: 1px solid $divider;
+		background-color: $fill;
+	}
+
+	.sidebar.shortcuts-pane treeview.view {
+		background-color: $fill;
+
+		&:selected {
+			@extend %selected_items_primary;
+		}
 	}
 
 	> grid.horizontal
